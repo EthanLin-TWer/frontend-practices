@@ -1,8 +1,7 @@
-'use strict';
+'use strict'
 
 function average_uneven(collection) {
-
-  //在这里写入代码
+  return collection
 }
 
-module.exports = average_uneven;
+module.exports = average_uneven

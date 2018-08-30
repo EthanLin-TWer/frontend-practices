@@ -1,8 +1,7 @@
-'use strict';
+'use strict'
 
 function even_to_letter(collection) {
-
-  //在这里写入代码
+  return collection
 }
 
-module.exports = even_to_letter;
+module.exports = even_to_letter

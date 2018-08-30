@@ -1,8 +1,7 @@
-'use strict';
+'use strict'
 
 function get_union(collection_a, collection_b) {
-  //在这里写入代码
+  return [collection_a, collection_b]
 }
 
-module.exports = get_union;
-
+module.exports = get_union

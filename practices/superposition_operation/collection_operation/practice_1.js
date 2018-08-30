@@ -1,9 +1,7 @@
-'use strict';
+'use strict'
 
 function hybrid_operation(collection) {
-
-  //在这里写入代码
+  return collection
 }
 
-module.exports = hybrid_operation;
-
+module.exports = hybrid_operation

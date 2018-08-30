@@ -1,8 +1,7 @@
-'use strict';
+'use strict'
 
 function amount_even(collection) {
-
-  //在这里写入代码
+  return collection
 }
 
-module.exports = amount_even;
+module.exports = amount_even

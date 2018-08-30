@@ -1,6 +1,6 @@
-'use strict';
-var number_map_to_word = function(collection){
-  return ['a','b','c','d','e'];
-};
+'use strict'
+var number_map_to_word = function(collection) {
+  return collection
+}
 
-module.exports = number_map_to_word;
+module.exports = number_map_to_word

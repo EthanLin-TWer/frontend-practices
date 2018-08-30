@@ -1,8 +1,13 @@
 {
   "scripts": {
+    "lint": "eslint practices specs",
     "test": "jest"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
     "husky": "^1.0.0-rc.13",
     "jest": "^23.5.0",
     "lint-staged": "^7.2.2",
@@ -25,12 +30,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "src/**/*.js": [
-      "eslint --fix",
+      "npm run lint -- --fix",
       "git add"
     ]
   }

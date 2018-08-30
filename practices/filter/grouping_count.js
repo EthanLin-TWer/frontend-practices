@@ -1,8 +1,7 @@
-'use strict';
+'use strict'
 
 function grouping_count(collection) {
-
-  //在这里写入代码
+  return collection
 }
 
-module.exports = grouping_count;
+module.exports = grouping_count

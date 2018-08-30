@@ -1,9 +1,7 @@
-'use strict';
+'use strict'
 
 function hybrid_operation_to_uneven(collection) {
-
-  //在这里写入代码
+  return collection
 }
 
-module.exports = hybrid_operation_to_uneven;
-
+module.exports = hybrid_operation_to_uneven

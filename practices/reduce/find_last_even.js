@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
 function find_last_even(collection) {
-  //在这里写入代码
+  return collection
 }
 
-module.exports = find_last_even;
+module.exports = find_last_even

@@ -1,6 +1,6 @@
-'use strict';
-var number_map_to_word_over_26 = function(collection){
-  return ['a','m','aa','ad','y','aa'];
-};
+'use strict'
+var number_map_to_word_over_26 = function(collection) {
+  return collection
+}
 
-module.exports = number_map_to_word_over_26;
+module.exports = number_map_to_word_over_26
