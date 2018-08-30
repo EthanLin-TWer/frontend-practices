@@ -1,4 +1,4 @@
-'use strict'
+
 
 const compute_chain_median = require('../../practices/reduce/compute_chain_median.js')
 

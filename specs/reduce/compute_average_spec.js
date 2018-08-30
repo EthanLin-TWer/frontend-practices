@@ -1,4 +1,4 @@
-'use strict'
+
 const compute_average = require('../../practices/reduce/compute_average.js')
 
 describe('compute_average', function() {

@@ -1,4 +1,4 @@
-'use strict'
+
 
 function double_to_one(collection) {
   return collection

@@ -1,4 +1,4 @@
-'use strict'
+
 
 const get_union = require('../../practices/collectionOperator/get_union.js')
 

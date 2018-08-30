@@ -1,4 +1,4 @@
-'use strict'
+
 
 const compute_median = require('../../practices/reduce/compute_median.js')
 

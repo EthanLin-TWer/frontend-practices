@@ -1,4 +1,4 @@
-'use strict'
+
 
 const number_map_to_word_over_26 = require('../../practices/map/number_map_to_word_over_26.js')
 

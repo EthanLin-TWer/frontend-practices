@@ -1,4 +1,4 @@
-'use strict'
+
 
 function compute_average(collection) {
   return collection

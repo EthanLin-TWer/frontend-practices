@@ -1,4 +1,4 @@
-'use strict'
+
 
 const choose_no_repeat_number = require('../../practices/filter/choose_no_repeat_number.js')
 

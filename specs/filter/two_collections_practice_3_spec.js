@@ -1,4 +1,4 @@
-'use strict'
+
 
 const choose_divisible_integer = require('../../practices/filter/two_collections_practice_3.js')
 

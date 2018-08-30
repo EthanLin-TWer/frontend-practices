@@ -1,4 +1,4 @@
-'use strict'
+
 
 const collect_last_element = require('../../practices/collectionOperator/collect_last_element.js')
 

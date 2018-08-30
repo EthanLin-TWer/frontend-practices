@@ -1,4 +1,4 @@
-'use strict'
+
 
 const double_to_one = require('../../practices/flaten/double_dimensional_array_to_one_2.js')
 

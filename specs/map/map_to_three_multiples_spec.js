@@ -1,4 +1,4 @@
-'use strict'
+
 const map_to_three_multiples = require('../../practices/map/map_to_three_multiples.js')
 
 describe('map to three multiples', function() {

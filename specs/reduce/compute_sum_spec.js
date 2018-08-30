@@ -1,4 +1,4 @@
-'use strict'
+
 
 const compute_elements_sum = require('../../practices/reduce/compute_sum.js')
 

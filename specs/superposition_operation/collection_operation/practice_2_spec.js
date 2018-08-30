@@ -1,4 +1,4 @@
-'use strict'
+
 
 const hybrid_operation_to_uneven = require('../../../practices/superposition_operation/collection_operation/practice_2.js')
 

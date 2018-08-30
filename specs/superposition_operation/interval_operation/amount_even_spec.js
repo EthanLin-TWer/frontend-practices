@@ -1,4 +1,4 @@
-'use strict'
+
 
 const amount_even = require('../../../practices/superposition_operation/interval_operation/amount_even.js')
 

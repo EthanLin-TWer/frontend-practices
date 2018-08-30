@@ -1,4 +1,4 @@
-'use strict'
+
 
 const average_uneven = require('../../../practices/superposition_operation/interval_operation/average_uneven.js')
 

@@ -1,4 +1,4 @@
-'use strict'
+
 
 function even_to_letter(collection) {
   return collection

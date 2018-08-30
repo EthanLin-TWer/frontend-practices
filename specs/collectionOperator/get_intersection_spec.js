@@ -1,4 +1,4 @@
-'use strict'
+
 
 const get_intersection = require('../../practices/collectionOperator/get_intersection.js')
 

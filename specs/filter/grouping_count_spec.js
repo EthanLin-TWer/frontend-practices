@@ -1,4 +1,4 @@
-'use strict'
+
 
 const grouping_count = require('../../practices/filter/grouping_count.js')
 

@@ -1,4 +1,4 @@
-'use strict'
+
 
 function find_first_even(collection) {
   return collection

@@ -1,4 +1,4 @@
-'use strict'
+
 
 function collect_min_number(collection) {
   return collection

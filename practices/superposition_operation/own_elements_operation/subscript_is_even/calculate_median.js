@@ -1,4 +1,4 @@
-'use strict'
+
 const calculate_median = function(collection) {
   return collection
 }

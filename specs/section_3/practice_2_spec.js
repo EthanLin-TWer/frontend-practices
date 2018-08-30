@@ -1,4 +1,4 @@
-'use strict'
+
 
 const create_updated_collection = require('../../practices/section_3/practice_2/practice.js')
 

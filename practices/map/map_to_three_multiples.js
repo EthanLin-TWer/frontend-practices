@@ -1,4 +1,4 @@
-'use strict'
+
 const map_to_three_multiples = function(collection) {
   return collection
 }

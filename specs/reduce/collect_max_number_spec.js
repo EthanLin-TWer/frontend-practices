@@ -1,4 +1,4 @@
-'use strict'
+
 
 const collect_max_number = require('../../practices/reduce/collect_max_number.js')
 

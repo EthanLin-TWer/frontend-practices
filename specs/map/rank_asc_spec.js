@@ -1,4 +1,4 @@
-'use strict'
+
 const rank_asc = require('../../practices/map/rank_asc.js')
 
 describe('rank by asc', function() {

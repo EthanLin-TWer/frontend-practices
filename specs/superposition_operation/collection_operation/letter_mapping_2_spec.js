@@ -1,4 +1,4 @@
-'use strict'
+
 
 const average_to_letter = require('../../../practices/superposition_operation/collection_operation/letter_mapping_2.js')
 

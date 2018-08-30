@@ -1,4 +1,4 @@
-'use strict'
+
 
 function find_last_even(collection) {
   return collection

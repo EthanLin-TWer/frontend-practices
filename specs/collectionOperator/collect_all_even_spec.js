@@ -1,4 +1,4 @@
-'use strict'
+
 
 const collect_all_even = require('../../practices/collectionOperator/collect_all_even.js')
 

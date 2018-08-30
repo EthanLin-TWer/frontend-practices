@@ -1,4 +1,4 @@
-'use strict'
+
 
 const collect_same_elements = require('../../practices/section_1/practice_2/practice.js')
 

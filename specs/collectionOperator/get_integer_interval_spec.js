@@ -1,4 +1,4 @@
-'use strict'
+
 
 const get_integer_interval = require('../../practices/collectionOperator/get_integer_interval.js')
 

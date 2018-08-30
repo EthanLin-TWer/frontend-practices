@@ -1,4 +1,4 @@
-'use strict'
+
 const number_map_to_word = require('../../practices/map/number_map_to_word.js')
 
 describe('number map to word', function() {

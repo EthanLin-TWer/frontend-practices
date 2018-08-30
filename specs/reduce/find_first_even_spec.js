@@ -1,4 +1,4 @@
-'use strict'
+
 
 const find_first_even = require('../../practices/reduce/find_first_even.js')
 

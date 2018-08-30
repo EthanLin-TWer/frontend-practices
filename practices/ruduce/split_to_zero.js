@@ -1,4 +1,4 @@
-'use strict'
+
 
 function spilt_to_zero(number, interval) {
   return [number, interval]

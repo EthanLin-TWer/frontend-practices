@@ -1,4 +1,4 @@
-'use strict'
+
 
 const find_element_last_subscript = require('../../practices/reduce/find_element_last_subscript.js')
 

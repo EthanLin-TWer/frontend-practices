@@ -1,4 +1,4 @@
-'use strict'
+
 
 function average_to_letter(collection) {
   return collection

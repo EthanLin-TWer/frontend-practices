@@ -1,4 +1,4 @@
-'use strict'
+
 const calculate_median = require('../../../../practices/superposition_operation/own_elements_operation/subscript_is_even/calculate_median.js')
 
 describe('calculate_median_spec', function() {

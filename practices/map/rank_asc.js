@@ -1,4 +1,4 @@
-'use strict'
+
 const rank_asc = function(collection) {
   return collection
 }

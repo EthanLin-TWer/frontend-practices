@@ -1,4 +1,4 @@
-'use strict'
+
 
 const count_same_elements = require('../../practices/section_2/practice_1/practice.js')
 

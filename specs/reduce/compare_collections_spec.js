@@ -1,4 +1,4 @@
-'use strict'
+
 
 const compare_collections = require('../../practices/reduce/compare_collections.js')
 

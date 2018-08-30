@@ -1,4 +1,4 @@
-'use strict'
+
 
 const even_group_calculate_average = function(collection) {
   return collection

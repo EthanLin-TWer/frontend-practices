@@ -1,4 +1,4 @@
-'use strict'
+
 
 const split_to_zero = require('../../practices/ruduce/split_to_zero.js')
 

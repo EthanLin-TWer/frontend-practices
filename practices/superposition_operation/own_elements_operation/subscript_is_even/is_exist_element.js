@@ -1,4 +1,4 @@
-'use strict'
+
 
 const is_exist_element = function(collection, element) {
   return [collection, element]

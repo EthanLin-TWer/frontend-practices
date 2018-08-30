@@ -1,4 +1,4 @@
-'use strict'
+
 
 const choose_common_elements = require('../../practices/filter/two_collections_practice_1.js')
 

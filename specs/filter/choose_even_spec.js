@@ -1,5 +1,3 @@
-'use strict'
-
 const choose_even = require('../../practices/filter/choose_even.js')
 
 describe('choose_even', function() {

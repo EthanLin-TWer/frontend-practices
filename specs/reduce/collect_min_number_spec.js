@@ -1,4 +1,4 @@
-'use strict'
+
 
 const collect_min_number = require('../../practices/reduce/collect_min_number.js')
 
