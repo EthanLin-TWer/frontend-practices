@@ -4,12 +4,12 @@ describe('calculate_median_spec', function() {
   const collection_a = [1, 2, 3, 4, 5, 6]
   const collection_b = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-  it('集合中第偶数个元素的个数为奇数时，计算所有第偶数个元素的中位数', function() {
+  it.skip('集合中第偶数个元素的个数为奇数时，计算所有第偶数个元素的中位数', function() {
     const result = calculate_median(collection_a)
     expect(result).toEqual(4)
   })
 
-  it('集合中第偶数个元素的个数为偶数时，计算所有第偶数个元素的中位数', function() {
+  it.skip('集合中第偶数个元素的个数为偶数时，计算所有第偶数个元素的中位数', function() {
     const result = calculate_median(collection_b)
     expect(result).toEqual(5)
   })

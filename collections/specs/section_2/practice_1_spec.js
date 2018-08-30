@@ -80,7 +80,7 @@ describe('practice-2-1', function() {
     'd',
   ]
 
-  it('把A集合中相同的元素统计出数量', function() {
+  it.skip('把A集合中相同的元素统计出数量', function() {
     const result = count_same_elements(collection)
 
     expect(result).toEqual([
