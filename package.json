@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "lint": "eslint practices specs",
+    "lint": "eslint collections",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -19,7 +19,7 @@
   },
   "jest": {
     "testMatch": [
-      "<rootDir>/specs/**/*spec.js"
+      "<rootDir>/**/*spec.js"
     ],
     "verbose": false,
     "collectCoverage": false
