@@ -1,5 +1,5 @@
 'use strict'
-var even_asc_odd_desc = function(collection) {
+const even_asc_odd_desc = function(collection) {
   return collection
 }
 module.exports = even_asc_odd_desc

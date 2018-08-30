@@ -1,9 +1,9 @@
 'use strict'
 
-var create_updated_collection = require('../../practices/section_3/practice_2/practice.js')
+const create_updated_collection = require('../../practices/section_3/practice_2/practice.js')
 
 describe('practice-3-2', function() {
-  var collection_a = [
+  const collection_a = [
     { key: 'a', count: 3 },
     { key: 'e', count: 7 },
     { key: 'h', count: 11 },
@@ -15,10 +15,10 @@ describe('practice-3-2', function() {
     { key: 'd', count: 5 },
   ]
 
-  var object_b = { value: ['a', 'd', 'e', 'f'] }
+  const object_b = { value: ['a', 'd', 'e', 'f'] }
 
   it('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新A集', function() {
-    var result = create_updated_collection(collection_a, object_b)
+    const result = create_updated_collection(collection_a, object_b)
 
     expect(result).toEqual([
       { key: 'a', count: 2 },

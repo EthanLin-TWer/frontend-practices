@@ -1,5 +1,5 @@
 'use strict'
-var rank_desc = function(collection) {
+const rank_desc = function(collection) {
   return collection
 }
 

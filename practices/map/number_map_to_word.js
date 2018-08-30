@@ -1,5 +1,5 @@
 'use strict'
-var number_map_to_word = function(collection) {
+const number_map_to_word = function(collection) {
   return collection
 }
 

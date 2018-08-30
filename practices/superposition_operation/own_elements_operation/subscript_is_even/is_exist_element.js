@@ -1,6 +1,6 @@
 'use strict'
 
-var is_exist_element = function(collection, element) {
+const is_exist_element = function(collection, element) {
   return [collection, element]
 }
 

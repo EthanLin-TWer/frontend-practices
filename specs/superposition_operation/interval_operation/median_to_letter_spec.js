@@ -1,9 +1,9 @@
 'use strict'
 
-var median_to_letter = require('../../../practices/superposition_operation/interval_operation/median_to_letter.js')
+const median_to_letter = require('../../../practices/superposition_operation/interval_operation/median_to_letter.js')
 
 describe('median_to_letter', function() {
-  var collection = [
+  const collection = [
     20,
     21,
     22,
@@ -41,7 +41,7 @@ describe('median_to_letter', function() {
   ]
 
   it('(20,53)的中位数(如果是小数上取整)对应的字母', function() {
-    var result = median_to_letter(collection)
+    const result = median_to_letter(collection)
 
     expect(result).toEqual('ak')
   })

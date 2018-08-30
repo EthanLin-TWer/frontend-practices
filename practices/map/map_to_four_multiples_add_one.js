@@ -1,5 +1,5 @@
 'use strict'
-var map_to_four_multiples_add_one = function(collection) {
+const map_to_four_multiples_add_one = function(collection) {
   return collection
 }
 
