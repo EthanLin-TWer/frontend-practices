@@ -1,9 +1,37 @@
 {
   "scripts": {
-    "test": "jasmine-node --verbose specs",
-    "test-single": "jasmine-node --verbose "
+    "test": "jest"
   },
-  "dependencies": {
-    "jasmine-node": "1.14.5"
+  "devDependencies": {
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.5.0",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/specs/**/*spec.js"
+    ],
+    "verbose": false,
+    "collectCoverage": false
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
   }
 }
