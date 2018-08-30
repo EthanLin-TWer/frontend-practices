@@ -1,6 +1,4 @@
-
-
-const compute_median = require('../../practices/reduce/compute_median.js')
+import { compute_median } from '../../practices/reduce/compute_median'
 
 describe('compute_median', function() {
   const collection_a = [1, 1, 1, 2, 3]

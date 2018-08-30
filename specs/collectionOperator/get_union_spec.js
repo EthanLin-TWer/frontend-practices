@@ -1,6 +1,4 @@
-
-
-const get_union = require('../../practices/collectionOperator/get_union.js')
+import { get_union } from '../../practices/collectionOperator/get_union'
 
 describe('get_union', function() {
   const collection_a = [10, 27, 28, 19, 5]

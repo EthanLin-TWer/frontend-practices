@@ -1,5 +1,3 @@
-
-
 const collect_same_elements = require('../../practices/section_1/practice_1/practice.js')
 
 describe('practice-1-1', function() {

@@ -1,5 +1,3 @@
-
-
 const even_asc_odd_desc = require('../../../practices/superposition_operation/own_elements_operation/even_asc_odd_desc.js')
 describe('even_asc_odd_desc_spec', function() {
   const collection_a = [4, 32, 12, 45, 67, 46, 2, 53, 68, 54, 11]

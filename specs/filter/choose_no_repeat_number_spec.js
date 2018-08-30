@@ -1,6 +1,4 @@
-
-
-const choose_no_repeat_number = require('../../practices/filter/choose_no_repeat_number.js')
+import { choose_no_repeat_number } from '../../practices/filter/choose_no_repeat_number'
 
 describe('choose_no_repeat_number', function() {
   const collection = [1, 1, 1, 2, 2, 3, 4]

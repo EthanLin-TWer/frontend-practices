@@ -1,6 +1,4 @@
-
-
-const collect_min_number = require('../../practices/reduce/collect_min_number.js')
+import { collect_min_number } from '../../practices/reduce/collect_min_number'
 
 describe('collect_min_number', function() {
   const collection = [1, 8, 9, 21, 5]

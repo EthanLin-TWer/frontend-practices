@@ -1,5 +1,4 @@
-
-const map_to_four_multiples_add_one = require('../../practices/map/map_to_four_multiples_add_one.js')
+import { map_to_four_multiples_add_one } from '../../practices/map/map_to_four_multiples_add_one'
 
 describe('map_to_four_multiples_add_one', function() {
   const collection_a = [1, 2, 3, 4, 5]

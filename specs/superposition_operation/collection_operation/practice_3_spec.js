@@ -1,5 +1,3 @@
-
-
 const hybrid_operation_to_uneven = require('../../../practices/superposition_operation/collection_operation/practice_3.js')
 
 describe('hybrid_operation_to_uneven', function() {

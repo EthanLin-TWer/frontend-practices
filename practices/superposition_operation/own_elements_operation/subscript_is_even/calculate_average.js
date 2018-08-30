@@ -1,4 +1,3 @@
-
 const calculate_average = function(collection) {
   return collection
 }

@@ -1,5 +1,4 @@
-
-const map_to_three_multiples = require('../../practices/map/map_to_three_multiples.js')
+import { map_to_three_multiples } from '../../practices/map/map_to_three_multiples'
 
 describe('map to three multiples', function() {
   const collection_a = [1, 3, 5, 4, 9]

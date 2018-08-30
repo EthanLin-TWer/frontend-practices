@@ -1,7 +1,3 @@
-
-
-function find_last_even(collection) {
-  return collection
+export const find_last_even = (collection) => {
+  return [collection]
 }
-
-module.exports = find_last_even

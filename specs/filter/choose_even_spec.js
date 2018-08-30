@@ -1,4 +1,4 @@
-const choose_even = require('../../practices/filter/choose_even.js')
+import { choose_even } from '../../practices/filter/choose_even'
 
 describe('choose_even', function() {
   const collection = [0, 1, 2, 3, 4, 6]

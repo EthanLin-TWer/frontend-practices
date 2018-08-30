@@ -1,6 +1,4 @@
-
-
-const compute_chain_median = require('../../practices/reduce/compute_chain_median.js')
+import { compute_chain_median } from '../../practices/reduce/compute_chain_median'
 
 describe('compute_chain_median', function() {
   const chain = '1->4->6->2->3->10->9->8->11->20->19->30'

@@ -1,6 +1,4 @@
-
-
-const grouping_count = require('../../practices/filter/grouping_count.js')
+import { grouping_count } from '../../practices/filter/grouping_count'
 
 describe('grouping_count', function() {
   const collection = [1, 1, 1, 1, 2, 3, 1, 3, 4, 2, 3, 1, 3, 4, 2]

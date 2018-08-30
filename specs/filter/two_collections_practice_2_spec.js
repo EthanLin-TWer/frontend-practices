@@ -1,6 +1,4 @@
-
-
-const choose_no_common_elements = require('../../practices/filter/two_collections_practice_2.js')
+import { choose_no_common_elements } from '../../practices/filter/two_collections_practice_2'
 
 describe('choose_no_common_elements', function() {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']

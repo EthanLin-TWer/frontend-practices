@@ -1,6 +1,4 @@
-
-
-const collect_max_number = require('../../practices/reduce/collect_max_number.js')
+import { collect_max_number } from '../../practices/reduce/collect_max_number'
 
 describe('collect_max_number', function() {
   const collection = [1, 2, 3, 4, 5]

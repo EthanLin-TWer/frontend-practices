@@ -1,6 +1,4 @@
-
-
-const get_intersection = require('../../practices/collectionOperator/get_intersection.js')
+import { get_intersection } from '../../practices/collectionOperator/get_intersection'
 
 describe('get_intersection', function() {
   const collection_a = [10, 27, 28, 19, 5]

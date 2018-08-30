@@ -1,6 +1,4 @@
-
-
-const double_to_one = require('../../practices/flaten/double_dimensional_array_to_one_2.js')
+import { double_to_one } from '../../practices/flaten/double_dimensional_array_to_one_1'
 
 describe('double_to_one', function() {
   const collection = [[1, 2, 3], [5, 2, 1, 4], [2, 1]]

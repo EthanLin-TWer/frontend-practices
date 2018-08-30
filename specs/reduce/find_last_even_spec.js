@@ -1,6 +1,4 @@
-
-
-const find_last_even = require('../../practices/reduce/find_last_even.js')
+import { find_last_even } from '../../practices/reduce/find_last_even'
 
 describe('find_last_even', function() {
   const collection = [1, 11, 27, 20, 4, 9, 15]

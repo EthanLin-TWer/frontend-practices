@@ -1,5 +1,3 @@
-
-
 function amount_even(collection) {
   return collection
 }

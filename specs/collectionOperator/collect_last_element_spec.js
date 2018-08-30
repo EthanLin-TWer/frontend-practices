@@ -1,6 +1,4 @@
-
-
-const collect_last_element = require('../../practices/collectionOperator/collect_last_element.js')
+import { collect_last_element } from '../../practices/collectionOperator/collect_last_element'
 
 describe('collect_last_element', function() {
   const collection = [1, 2, 3, 4, 5]

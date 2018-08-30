@@ -1,5 +1,4 @@
-
-const compute_average = require('../../practices/reduce/compute_average.js')
+import { compute_average } from '../../practices/reduce/compute_average'
 
 describe('compute_average', function() {
   const collection = [1, 3, 5, 98, 67, 453]

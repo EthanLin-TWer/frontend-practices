@@ -1,6 +1,4 @@
-
-
-const get_letter_interval = require('../../practices/collectionOperator/get_letter_interval.js')
+import { get_letter_interval } from '../../practices/collectionOperator/get_letter_interval'
 
 describe('get_letter_interval', function() {
   const collection_a = ['a', 'b', 'c', 'd', 'e']

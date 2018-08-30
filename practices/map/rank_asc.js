@@ -1,6 +1,3 @@
-
-const rank_asc = function(collection) {
-  return collection
+export const rank_asc = (collection) => {
+  return [collection]
 }
-
-module.exports = rank_asc

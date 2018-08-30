@@ -1,7 +1,3 @@
-
-
-function spilt_to_zero(number, interval) {
-  return [number, interval]
+export const split_to_zero = (number, internal) => {
+  return [number, internal]
 }
-
-module.exports = spilt_to_zero

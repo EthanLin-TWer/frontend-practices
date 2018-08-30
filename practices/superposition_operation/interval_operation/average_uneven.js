@@ -1,5 +1,3 @@
-
-
 function average_uneven(collection) {
   return collection
 }

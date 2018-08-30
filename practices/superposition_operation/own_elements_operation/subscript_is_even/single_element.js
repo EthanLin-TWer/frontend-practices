@@ -1,4 +1,3 @@
-
 const single_element = function(collection) {
   return collection
 }

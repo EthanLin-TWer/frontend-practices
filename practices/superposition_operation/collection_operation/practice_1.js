@@ -1,5 +1,3 @@
-
-
 function hybrid_operation(collection) {
   return collection
 }

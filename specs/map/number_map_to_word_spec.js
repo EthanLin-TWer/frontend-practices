@@ -1,5 +1,4 @@
-
-const number_map_to_word = require('../../practices/map/number_map_to_word.js')
+import { number_map_to_word } from '../../practices/map/number_map_to_word'
 
 describe('number map to word', function() {
   const collection_a = [1, 2, 3, 4, 5]

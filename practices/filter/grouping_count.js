@@ -1,7 +1,3 @@
-
-
-function grouping_count(collection) {
-  return collection
+export const grouping_count = (collection) => {
+  return [collection]
 }
-
-module.exports = grouping_count

@@ -1,5 +1,3 @@
-
-
 const median_to_letter = require('../../../practices/superposition_operation/interval_operation/median_to_letter.js')
 
 describe('median_to_letter', function() {

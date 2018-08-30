@@ -1,6 +1,4 @@
-
-
-const split_to_zero = require('../../practices/ruduce/split_to_zero.js')
+import { split_to_zero } from '../../practices/ruduce/split_to_zero'
 
 describe('split_to_zero', function() {
   const collection_a = [0.8, 0.6, 0.4, 0.2, 0]

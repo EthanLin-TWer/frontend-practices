@@ -1,4 +1,3 @@
-
 const even_group_calculate_average = require('../../../../practices/superposition_operation/own_elements_operation/subscript_is_even/even_group_calculate_average.js')
 
 describe('even_group_calculate_average', function() {

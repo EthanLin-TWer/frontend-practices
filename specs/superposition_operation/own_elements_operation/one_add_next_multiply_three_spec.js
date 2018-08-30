@@ -1,4 +1,3 @@
-
 const one_add_next_multiply_three = require('../../../practices/superposition_operation/own_elements_operation/one_add_next_multiply_three.js')
 
 describe('one_add_next_multiply_three_spec', function() {

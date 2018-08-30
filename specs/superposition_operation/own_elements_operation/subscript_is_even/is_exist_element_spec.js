@@ -1,4 +1,3 @@
-
 const is_exist_element = require('../../../../practices/superposition_operation/own_elements_operation/subscript_is_even/is_exist_element.js')
 
 describe('is_exist_element_spec', function() {

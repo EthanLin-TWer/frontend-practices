@@ -1,7 +1,3 @@
-
-
-function calculate_elements_sum(collection) {
-  return collection
+export const compute_elements_sum = (collection) => {
+  return [collection]
 }
-
-module.exports = calculate_elements_sum

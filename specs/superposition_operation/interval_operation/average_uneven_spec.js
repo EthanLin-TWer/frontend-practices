@@ -1,5 +1,3 @@
-
-
 const average_uneven = require('../../../practices/superposition_operation/interval_operation/average_uneven.js')
 
 describe('average_uneven', function() {

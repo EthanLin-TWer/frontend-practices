@@ -1,5 +1,4 @@
-
-const rank_asc = require('../../practices/map/rank_asc.js')
+import { rank_asc } from '../../practices/map/rank_asc'
 
 describe('rank by asc', function() {
   const collection_a = [3, 2, 4, 5, 6]

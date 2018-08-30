@@ -1,6 +1,4 @@
-
-
-const collect_all_even = require('../../practices/collectionOperator/collect_all_even.js')
+import { collect_all_even } from '../../practices/collectionOperator/collect_all_even'
 
 describe('collect_all_even', function() {
   const collection_a = [1, 2, 3, 4, 5]

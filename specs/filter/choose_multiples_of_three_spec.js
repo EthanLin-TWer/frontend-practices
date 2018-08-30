@@ -1,6 +1,4 @@
-
-
-const choose_multiples_of_three = require('../../practices/filter/choose_multiples_of_three.js')
+import { choose_multiples_of_three } from '../../practices/filter/choose_multiples_of_three'
 
 describe('choose_multiples_of_three', function() {
   const collection = [0, 1, 2, 3, 4, 5, 6, 9, 11]

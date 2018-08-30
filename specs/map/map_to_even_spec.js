@@ -1,5 +1,4 @@
-
-const map_to_even = require('../../practices/map/map_to_even.js')
+import { map_to_even } from '../../practices/map/map_to_even'
 
 describe('map to even', function() {
   const collection_a = [1, 2, 3, 4, 5]

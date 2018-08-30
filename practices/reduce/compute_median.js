@@ -1,7 +1,3 @@
-
-
-function compute_median(collection) {
-  return collection
+export const compute_median = (collection) => {
+  return [collection]
 }
-
-module.exports = compute_median

@@ -1,6 +1,4 @@
-
-
-const get_integer_interval = require('../../practices/collectionOperator/get_integer_interval.js')
+import { get_integer_interval } from '../../practices/collectionOperator/get_integer_interval'
 
 describe('get_integer_interval', function() {
   const collection_a = [1, 2, 3, 4, 5]

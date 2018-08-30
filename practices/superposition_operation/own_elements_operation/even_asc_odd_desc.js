@@ -1,4 +1,3 @@
-
 const even_asc_odd_desc = function(collection) {
   return collection
 }

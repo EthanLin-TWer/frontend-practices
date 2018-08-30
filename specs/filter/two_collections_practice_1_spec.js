@@ -1,6 +1,4 @@
-
-
-const choose_common_elements = require('../../practices/filter/two_collections_practice_1.js')
+import { choose_common_elements } from '../../practices/filter/two_collections_practice_1'
 
 describe('choose_common_elements', function() {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']

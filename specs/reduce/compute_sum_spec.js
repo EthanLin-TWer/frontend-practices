@@ -1,6 +1,4 @@
-
-
-const compute_elements_sum = require('../../practices/reduce/compute_sum.js')
+import { compute_elements_sum } from '../../practices/reduce/compute_sum'
 
 describe('compute_elements_sum', function() {
   const collection = [1, 2, 3, 4, 5]

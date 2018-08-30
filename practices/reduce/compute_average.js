@@ -1,7 +1,3 @@
-
-
-function compute_average(collection) {
-  return collection
+export const compute_average = (collection) => {
+  return [collection]
 }
-
-module.exports = compute_average

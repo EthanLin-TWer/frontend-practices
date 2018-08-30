@@ -1,6 +1,4 @@
-
-
-const find_first_even = require('../../practices/reduce/find_first_even.js')
+import { find_first_even } from '../../practices/reduce/find_first_even'
 
 describe('find_first_even', function() {
   const collection = [1, 11, 27, 20, 4, 9, 15]

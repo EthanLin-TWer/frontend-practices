@@ -1,6 +1,4 @@
-
-
-const compare_collections = require('../../practices/reduce/compare_collections.js')
+import { compare_collections } from '../../practices/reduce/compare_collections'
 
 describe('compare_collections', function() {
   const collection_a = [1, 11, 27, 20, 4, 9, 15]
