@@ -42,7 +42,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "practices/**/*.js": [
       "npm run lint -- --fix",
       "git add"
     ]
