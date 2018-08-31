@@ -6,11 +6,17 @@ export const collectSameElementsInSubArray = (collection_a, collection_b) => {
   return [collection_a, collection_b]
 }
 
-export const collectSameElementsWithinObjectValue = (collection_a, collection_b) => {
+export const collectSameElementsWithinObjectValue = (
+  collection_a,
+  collection_b
+) => {
   return [collection_a, collection_b]
 }
 
-export const collectSameElementsInBothObjectKeysAndValues = (collection_a, collection_b) => {
+export const collectSameElementsInBothObjectKeysAndValues = (
+  collection_a,
+  collection_b
+) => {
   return [collection_a, collection_b]
 }
 
@@ -38,6 +44,9 @@ export const countAndMinusIntersectionally = (collection_a, object_b) => {
   return [collection_a, object_b]
 }
 
-export const countAndMinusIntersectionallyWithMultiplesCounts = (collection_a, object_b) => {
+export const countAndMinusIntersectionallyWithMultiplesCounts = (
+  collection_a,
+  object_b
+) => {
   return [collection_a, object_b]
 }
