@@ -11,33 +11,33 @@ import {
   countAndMinusIntersectionally, countAndMinusIntersectionallyWithMultiplesCounts,
 } from './section'
 
-describe('collectSameElements', function() {
+describe('collectSameElements', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = ['a', 'd', 'e', 'f']
 
-  it.skip('选出A集合中与B集合中相同的元素', function() {
+  it.skip('选出A集合中与B集合中相同的元素', () => {
     const result = collectSameElements(collection_a, collection_b)
 
     expect(result).toEqual(['a', 'e', 'f', 'd'])
   })
 })
 
-describe('collectSameElementsInSubArray', function() {
+describe('collectSameElementsInSubArray', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = [['a', 'd', 'e', 'f']]
 
-  it.skip('选出A集合中与B集合中子数组的元素相同的元素', function() {
+  it.skip('选出A集合中与B集合中子数组的元素相同的元素', () => {
     const result = collectSameElementsInSubArray(collection_a, collection_b)
 
     expect(result).toEqual(['a', 'e', 'f', 'd'])
   })
 })
 
-describe('collectSameElementsWithinObjectValue', function() {
+describe('collectSameElementsWithinObjectValue', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中跟B对象中value属性中的元素相同的元素', function() {
+  it.skip('选出A集合中跟B对象中value属性中的元素相同的元素', () => {
     const result = collectSameElementsWithinObjectValue(
       collection_a,
       collection_b
@@ -47,7 +47,7 @@ describe('collectSameElementsWithinObjectValue', function() {
   })
 })
 
-describe('collectSameElementsInBothObjectKeysAndValues', function() {
+describe('collectSameElementsInBothObjectKeysAndValues', () => {
   const collection_a = [
     { key: 'a' },
     { key: 'e' },
@@ -61,7 +61,7 @@ describe('collectSameElementsInBothObjectKeysAndValues', function() {
   ]
   const collection_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中元素的key属性，跟B对象中value属性中的元素相同的元素', function() {
+  it.skip('选出A集合中元素的key属性，跟B对象中value属性中的元素相同的元素', () => {
     const result = collectSameElementsInBothObjectKeysAndValues(
       collection_a,
       collection_b
@@ -71,7 +71,7 @@ describe('collectSameElementsInBothObjectKeysAndValues', function() {
   })
 })
 
-describe('countSameElements', function() {
+describe('countSameElements', () => {
   const collection = [
     'a',
     'a',
@@ -151,7 +151,7 @@ describe('countSameElements', function() {
     'd',
   ]
 
-  it.skip('把A集合中相同的元素统计出数量', function() {
+  it.skip('把A集合中相同的元素统计出数量', () => {
     const result = countSameElements(collection)
 
     expect(result).toEqual([
@@ -168,7 +168,7 @@ describe('countSameElements', function() {
   })
 })
 
-describe('countSameElementsWithMultipleCounts', function() {
+describe('countSameElementsWithMultipleCounts', () => {
   const collection = [
     'a',
     'a',
@@ -244,7 +244,7 @@ describe('countSameElementsWithMultipleCounts', function() {
     'd-5',
   ]
 
-  it.skip('把A集合中相同的元素统计出数量', function() {
+  it.skip('把A集合中相同的元素统计出数量', () => {
     const result = countSameElementsWithMultipleCounts(collection)
 
     expect(result).toEqual([
@@ -261,7 +261,7 @@ describe('countSameElementsWithMultipleCounts', function() {
   })
 })
 
-describe('countSameElementsWithDifferentCountsFormat', function() {
+describe('countSameElementsWithDifferentCountsFormat', () => {
   const collection = [
     'a',
     'a',
@@ -317,7 +317,7 @@ describe('countSameElementsWithDifferentCountsFormat', function() {
     'd-5',
   ]
 
-  it.skip('把A集合中相同的元素统计出数量', function() {
+  it.skip('把A集合中相同的元素统计出数量', () => {
     const result = countSameElementsWithDifferentCountsFormat(collection)
 
     expect(result).toEqual([
@@ -334,7 +334,7 @@ describe('countSameElementsWithDifferentCountsFormat', function() {
   })
 })
 
-describe('createUpdatedCollection', function() {
+describe('createUpdatedCollection', () => {
   const collection_a = [
     { key: 'a', count: 2 },
     { key: 'e', count: 2 },
@@ -349,7 +349,7 @@ describe('createUpdatedCollection', function() {
 
   const object_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count-1，输出减过之后的新A集合', function() {
+  it.skip('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count-1，输出减过之后的新A集合', () => {
     const result = createUpdatedCollection(collection_a, object_b)
 
     expect(result).toEqual([
@@ -366,7 +366,7 @@ describe('createUpdatedCollection', function() {
   })
 })
 
-describe('createUpdatedCollection2', function() {
+describe('createUpdatedCollection2', () => {
   const collection_a = [
     { key: 'a', count: 3 },
     { key: 'e', count: 7 },
@@ -381,7 +381,7 @@ describe('createUpdatedCollection2', function() {
 
   const object_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新A集', function() {
+  it.skip('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新A集', () => {
     const result = createUpdatedCollection2(collection_a, object_b)
 
     expect(result).toEqual([
@@ -398,7 +398,7 @@ describe('createUpdatedCollection2', function() {
   })
 })
 
-describe('countAndMinusIntersectionally', function() {
+describe('countAndMinusIntersectionally', () => {
   const collection_a = [
     'a',
     'a',
@@ -480,7 +480,7 @@ describe('countAndMinusIntersectionally', function() {
 
   const object_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('统计出A集合中相同的元素的个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', function() {
+  it.skip('统计出A集合中相同的元素的个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', () => {
     const result = countAndMinusIntersectionally(collection_a, object_b)
 
     expect(result).toEqual([
@@ -497,7 +497,7 @@ describe('countAndMinusIntersectionally', function() {
   })
 })
 
-describe('countAndMinusIntersectionallyWithMultiplesCounts', function() {
+describe('countAndMinusIntersectionallyWithMultiplesCounts', () => {
   const collection_a = [
     'a',
     'a',
@@ -575,7 +575,7 @@ describe('countAndMinusIntersectionallyWithMultiplesCounts', function() {
 
   const object_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('统计出A集合中相同的元素的个数，有过有-就把-右边的数字也计算入个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', function() {
+  it.skip('统计出A集合中相同的元素的个数，有过有-就把-右边的数字也计算入个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', () => {
     const result = countAndMinusIntersectionallyWithMultiplesCounts(collection_a, object_b)
 
     expect(result).toEqual([
