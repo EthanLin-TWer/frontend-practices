@@ -2,7 +2,10 @@ import {
   chooseMultiplesOfThree,
   chooseEven,
   chooseNoRepeatNumber,
-  groupingCount, chooseCommonElements, chooseNoCommonElements, chooseDivisibleInteger,
+  groupingCount,
+  chooseCommonElements,
+  chooseNoCommonElements,
+  chooseDivisibleInteger,
 } from './filter'
 
 describe('chooseEven', () => {

@@ -10,7 +10,7 @@ import {
   calculateLastSubscription,
   findFirstEven,
   findLastEven,
-  splitToZero
+  splitToZero,
 } from './reduce'
 
 describe('collectMaxNumber', () => {

@@ -3,7 +3,10 @@ import {
   calculateAverage,
   evenAscOddDesc,
   oneAddNextMultiplyThree,
-  rankByTwoLargeOneSmall, evenGroupCalculateAverage, isExistElement, singleElement
+  rankByTwoLargeOneSmall,
+  evenGroupCalculateAverage,
+  isExistElement,
+  singleElement,
 } from './own-elements-operation'
 
 describe('calculateAverage', () => {

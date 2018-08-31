@@ -1,4 +1,8 @@
-import { computeOddSum, computerEvenSum, medianToLetter } from './interval-operation'
+import {
+  computeOddSum,
+  computerEvenSum,
+  medianToLetter,
+} from './interval-operation'
 
 describe('amount_even', () => {
   const collection = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

@@ -2,7 +2,8 @@ import {
   averageToLetter,
   evenToLetter,
   multipleOddAndAdd,
-  multipleAndComputeSum, multipleOddAndComputeSum
+  multipleAndComputeSum,
+  multipleOddAndComputeSum,
 } from './collection-operation'
 
 describe('even_to_letter', () => {

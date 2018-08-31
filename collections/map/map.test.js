@@ -3,7 +3,9 @@ import {
   mapToEven,
   mapToThreeMultiples,
   mapNumberToWord,
-  mapNumberToWordOver26, sortAscendingly, sortDescendingly
+  mapNumberToWordOver26,
+  sortAscendingly,
+  sortDescendingly,
 } from './map'
 
 describe('mapToEven', () => {
@@ -55,7 +57,6 @@ describe('mapNumberToWordOver26', () => {
     expect(result).toEqual(collection_b)
   })
 })
-
 
 describe('sortAscendinglly', () => {
   const collection_a = [3, 2, 4, 5, 6]

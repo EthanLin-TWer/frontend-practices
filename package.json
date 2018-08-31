@@ -19,7 +19,7 @@
   },
   "jest": {
     "testMatch": [
-      "<rootDir>/**/*spec.js"
+      "<rootDir>/**/*.test.js"
     ],
     "verbose": false,
     "collectCoverage": false
@@ -43,7 +43,7 @@
     }
   },
   "lint-staged": {
-    "practices/**/*.js": [
+    "*.js": [
       "npm run lint -- --fix",
       "git add"
     ]

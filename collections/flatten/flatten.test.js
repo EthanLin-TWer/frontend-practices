@@ -1,4 +1,7 @@
-import { twoDimensionalArrayToOneSorted, twoDimensionalArrayToOne } from './flatten'
+import {
+  twoDimensionalArrayToOneSorted,
+  twoDimensionalArrayToOne,
+} from './flatten'
 
 describe('double_to_one', () => {
   const collection = [1, [2], [3, 4]]
