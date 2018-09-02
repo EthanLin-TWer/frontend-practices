@@ -22,7 +22,7 @@ describe('collectAllEven', () => {
 describe('collectLastElement', () => {
   const collection = [1, 2, 3, 4, 5]
 
-  it.skip('弹出集合最后一个元素', () => {
+  it('弹出集合最后一个元素', () => {
     const result = collectLastElement(collection)
     expect(result).toEqual(5)
   })

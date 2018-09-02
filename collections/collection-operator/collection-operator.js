@@ -3,7 +3,7 @@ export const collectAllEven = (collection) => {
 }
 
 export const collectLastElement = (collection) => {
-  return [collection]
+  return collection[collection.length - 1]
 }
 
 export const getIntegerInterval = (number_a, number_b) => {
