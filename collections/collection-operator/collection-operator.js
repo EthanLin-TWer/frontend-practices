@@ -7,6 +7,10 @@ export const collectLastElement = (collection) => {
 }
 
 export const getIntegerInterval = (number_a, number_b) => {
+  if (number_b === number_a) {
+    return [number_b]
+  }
+
   if (number_a < number_b) {
     return Array(number_b)
       .fill(number_a)

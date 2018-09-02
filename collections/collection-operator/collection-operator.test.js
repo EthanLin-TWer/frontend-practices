@@ -42,7 +42,7 @@ describe('getIntegerInterval', () => {
     expect(result).toEqual(collection_b)
   })
 
-  it.skip('给定两个相同的数字得到只含此数字的数组', () => {
+  it('给定两个相同的数字得到只含此数字的数组', () => {
     const result = getIntegerInterval(5, 5)
     expect(result).toEqual([5])
   })
