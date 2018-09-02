@@ -32,7 +32,7 @@ describe('getIntegerInterval', () => {
   const collection_a = [1, 2, 3, 4, 5]
   const collection_b = [5, 4, 3, 2, 1]
 
-  it.skip('根据给出的两个数字得到一个自增1的数字区间', () => {
+  it('根据给出的两个数字得到一个自增1的数字区间', () => {
     const result = getIntegerInterval(1, 5)
     expect(result).toEqual(collection_a)
   })

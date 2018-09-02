@@ -7,7 +7,9 @@ export const collectLastElement = (collection) => {
 }
 
 export const getIntegerInterval = (number_a, number_b) => {
-  return [number_a, number_b]
+  return Array(number_b)
+    .fill(number_a)
+    .map((x, i) => x + i)
 }
 
 export const getEvenIntegerInterval = (number_a, number_b) => {
