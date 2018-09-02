@@ -11,14 +11,13 @@ export const getIntegerInterval = (number_a, number_b) => {
     return [number_b]
   }
 
-  if (number_a < number_b) {
-    return Array(number_b)
-      .fill(number_a)
-      .map((x, i) => x + i)
-  }
-  return Array(number_a)
+  const steps = number_b - number_a
+  const incrementer = number_b >= number_a ? 1 : -1
+  const counts = Math.abs(steps + incrementer)
+
+  return Array(counts)
     .fill(number_a)
-    .map((x, i) => x - i)
+    .map((x, i) => x + i * incrementer)
 }
 
 export const getEvenIntegerInterval = (number_a, number_b) => {
