@@ -37,7 +37,7 @@ describe('getIntegerInterval', () => {
     expect(result).toEqual(collection_a)
   })
 
-  it.skip('根据给出的两个数字得到一个自减1的数字区间', () => {
+  it('根据给出的两个数字得到一个自减1的数字区间', () => {
     const result = getIntegerInterval(5, 1)
     expect(result).toEqual(collection_b)
   })
