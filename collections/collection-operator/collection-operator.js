@@ -1,5 +1,5 @@
 export const collectAllEven = (collection) => {
-  return [collection]
+  return collection.filter((number) => number % 2 === 0)
 }
 
 export const collectLastElement = (collection) => {

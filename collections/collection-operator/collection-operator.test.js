@@ -13,7 +13,7 @@ describe('collectAllEven', () => {
   const collection_a = [1, 2, 3, 4, 5]
   const collection_b = [2, 4]
 
-  it.skip('选出给定区间中所有的偶数', () => {
+  it('选出给定区间中所有的偶数', () => {
     const result = collectAllEven(collection_a)
     expect(result).toEqual(collection_b)
   })
