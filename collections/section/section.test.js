@@ -62,7 +62,7 @@ describe('collectSameElementsInBothObjectKeysAndValues', () => {
   ]
   const collection_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中元素的key属性，跟B对象中value属性中的元素相同的元素', () => {
+  it('选出A集合中元素的key属性，跟B对象中value属性中的元素相同的元素', () => {
     const result = collectSameElementsInBothObjectKeysAndValues(
       collection_a,
       collection_b

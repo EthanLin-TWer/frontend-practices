@@ -17,7 +17,9 @@ export const collectSameElementsInBothObjectKeysAndValues = (
   collection_a,
   collection_b
 ) => {
-  return [collection_a, collection_b]
+  return collection_a
+    .filter((element) => collection_b.value.includes(element.key))
+    .map(({ key }) => key)
 }
 
 export const countSameElements = (collection) => {
