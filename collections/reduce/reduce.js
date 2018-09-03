@@ -42,8 +42,8 @@ export const computeSum = (collection) => {
   return collection.reduce((sum, element) => sum + element, 0)
 }
 
-export const calculateFirstSubscription = (collection, element) => {
-  return [collection, element]
+export const calculateFirstSubscription = (collection, finding) => {
+  return collection.indexOf(collection.find((element) => element === finding))
 }
 
 export const calculateLastSubscription = (collection, element) => {
