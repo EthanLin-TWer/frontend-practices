@@ -11,7 +11,7 @@ export const collectMinNumber = (collection) => {
 }
 
 export const compareCollections = (collection_a, collection_b) => {
-  return [collection_a, collection_b]
+  return collection_a.every((element, i) => collection_b[i] === element)
 }
 
 export const computeAverage = (collection) => {

@@ -35,7 +35,7 @@ describe('compareCollections', () => {
   const collection_a = [1, 11, 27, 20, 4, 9, 15]
   const collection_b = [1, 11, 27, 20, 4, 9, 15]
 
-  it.skip('判断两个集合是否相同', () => {
+  it('判断两个集合是否相同', () => {
     const result = compareCollections(collection_a, collection_b)
 
     expect(result).toEqual(true)
