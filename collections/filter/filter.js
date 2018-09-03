@@ -16,7 +16,18 @@ export const chooseNoRepeatNumber = (collection) => {
 }
 
 export const groupingCount = (collection) => {
-  return [collection]
+  const uniqNumbers = collection.reduce((result, next) => {
+    if (!result.includes(next)) {
+      return result.concat(next)
+    }
+    return result
+  }, [])
+
+  return uniqNumbers
+    .map((number) => ({
+      [number]: collection.filter((element) => element === number).length,
+    }))
+    .reduce((a, b) => ({ ...a, ...b }), {})
 }
 
 export const chooseCommonElements = (collection_a, collection_b) => {

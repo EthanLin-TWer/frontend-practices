@@ -41,7 +41,7 @@ describe('chooseNoRepeatNumber', () => {
 describe('groupingCount', () => {
   const collection = [1, 1, 1, 1, 2, 3, 1, 3, 4, 2, 3, 1, 3, 4, 2]
 
-  it.skip('从collection中计算出每个数的个数', () => {
+  it('从collection中计算出每个数的个数', () => {
     const result = groupingCount(collection)
 
     expect(result).toEqual({ '1': 6, '2': 3, '3': 4, '4': 2 })
