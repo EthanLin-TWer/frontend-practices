@@ -1,5 +1,7 @@
 export const collectMaxNumber = (collection) => {
-  return [collection]
+  return collection.reduce((result, element) => {
+    return result && result > element ? result : element
+  }, null)
 }
 
 export const collectMinNumber = (collection) => {

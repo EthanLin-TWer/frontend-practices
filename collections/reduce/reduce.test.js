@@ -16,7 +16,7 @@ import {
 describe('collectMaxNumber', () => {
   const collection = [1, 2, 3, 4, 5]
 
-  it.skip('选出给定数字集合元素的最大值', () => {
+  it('选出给定数字集合元素的最大值', () => {
     const result = collectMaxNumber(collection)
     expect(result).toEqual(5)
   })
