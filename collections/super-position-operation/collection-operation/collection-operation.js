@@ -29,4 +29,7 @@ export const multipleOddAndAdd = (collection) => {
 
 export const multipleOddAndComputeSum = (collection) => {
   return collection
+    .filter((number) => number % 2 !== 0)
+    .map((number) => number * 3 + 5)
+    .reduce((total, number) => total + number, 0)
 }

@@ -49,7 +49,7 @@ describe('multipleOddAndComputeSum', () => {
 describe('multipleOddAndComputeSum', () => {
   const collection = [1, 5, 7, 12, 11, 35, 54, 67, 70]
 
-  it.skip('每一个奇数*3+5再求总和', () => {
+  it('每一个奇数*3+5再求总和', () => {
     const result = multipleOddAndComputeSum(collection)
 
     expect(result).toEqual(408)
