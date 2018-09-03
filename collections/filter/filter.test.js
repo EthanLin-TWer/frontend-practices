@@ -11,7 +11,7 @@ import {
 describe('chooseEven', () => {
   const collection = [0, 1, 2, 3, 4, 6]
 
-  it.skip('从collection中选出偶数', () => {
+  it('从collection中选出偶数', () => {
     const result = chooseEven(collection)
 
     expect(result).toEqual([0, 2, 4, 6])

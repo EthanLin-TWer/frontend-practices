@@ -1,5 +1,5 @@
 export const chooseEven = (collection) => {
-  return [collection]
+  return collection.filter((element) => element % 2 === 0)
 }
 
 export const chooseMultiplesOfThree = (collection) => {
