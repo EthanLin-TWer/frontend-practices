@@ -35,7 +35,16 @@ export const countSameElements = (collection) => {
 }
 
 export const countSameElementsWithMultipleCounts = (collection) => {
-  return [collection]
+  const elements = collection.map((word) => word.split('-'))
+  const words = chooseNoRepeatNumber(elements.map(([word]) => word))
+
+  return words.map((word) => ({
+    key: word,
+    count: elements
+      .filter(([key]) => key === word)
+      // eslint-disable-next-line no-unused-vars
+      .reduce((total, [key, count = 1]) => total + Number(count), 0),
+  }))
 }
 
 export const countSameElementsWithDifferentCountsFormat = (collection) => {
