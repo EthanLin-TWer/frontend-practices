@@ -1,3 +1,4 @@
+import { chooseEven } from '../../filter/filter'
 import { computeAverage } from '../../reduce/reduce'
 
 export const calculateAverage = (collection) => {
@@ -25,7 +26,8 @@ export const singleElement = (collection) => {
 }
 
 export const evenAscOddDesc = (collection) => {
-  return collection
+  const evens = chooseEven(collection)
+  return evens
 }
 
 export const oneAddNextMultiplyThree = (collection) => {

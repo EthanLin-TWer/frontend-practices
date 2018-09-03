@@ -1,4 +1,4 @@
-import { words } from '../../util-words'
+import { words } from '../../utils'
 
 export const evenToLetter = (collection) => {
   return collection

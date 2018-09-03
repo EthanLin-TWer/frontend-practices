@@ -1,4 +1,4 @@
-import { words } from '../util-words'
+import { words } from '../utils'
 
 export const mapToEven = (collection) => {
   return collection.map((element) => element * 2)
