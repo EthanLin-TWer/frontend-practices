@@ -2,7 +2,8 @@
   "scripts": {
     "lint": "eslint collections",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "rebase": "./scripts/rebase-answer-branches-onto-master.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
