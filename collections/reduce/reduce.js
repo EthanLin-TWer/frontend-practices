@@ -46,8 +46,10 @@ export const calculateFirstSubscription = (collection, finding) => {
   return collection.indexOf(collection.find((element) => element === finding))
 }
 
-export const calculateLastSubscription = (collection, element) => {
-  return [collection, element]
+export const calculateLastSubscription = (collection, finding) => {
+  return collection.lastIndexOf(
+    collection.find((element) => element === finding)
+  )
 }
 
 export const findFirstEven = (collection) => {
