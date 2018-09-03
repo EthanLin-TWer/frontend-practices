@@ -3,7 +3,7 @@ export const chooseEven = (collection) => {
 }
 
 export const chooseMultiplesOfThree = (collection) => {
-  return [collection]
+  return collection.filter((element) => element % 3 === 0)
 }
 
 export const chooseNoRepeatNumber = (collection) => {
