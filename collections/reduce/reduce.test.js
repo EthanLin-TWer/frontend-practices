@@ -84,7 +84,7 @@ describe('computeMedian', () => {
 describe('computeSum', () => {
   const collection = [1, 2, 3, 4, 5]
 
-  it.skip('计算给定集合元素的总和', () => {
+  it('计算给定集合元素的总和', () => {
     const result = computeSum(collection)
 
     expect(result).toEqual(15)

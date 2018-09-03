@@ -39,7 +39,7 @@ export const computeMedian = (collection) => {
 }
 
 export const computeSum = (collection) => {
-  return [collection]
+  return collection.reduce((sum, element) => sum + element, 0)
 }
 
 export const calculateFirstSubscription = (collection, element) => {
