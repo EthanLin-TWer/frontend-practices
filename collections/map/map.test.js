@@ -58,11 +58,11 @@ describe('mapNumberToWordOver26', () => {
   })
 })
 
-describe('sortAscendinglly', () => {
+describe('sortAscendingly', () => {
   const collection_a = [3, 2, 4, 5, 6]
-  const collection_b = [6, 5, 4, 3, 2]
+  const collection_b = [2, 3, 4, 5, 6]
 
-  it.skip('从大到小排序', () => {
+  it.skip('从小到大排序', () => {
     const result = sortAscendingly(collection_a)
     expect(result).toEqual(collection_b)
   })
@@ -70,9 +70,9 @@ describe('sortAscendinglly', () => {
 
 describe('sortDescendingly', () => {
   const collection_a = [3, 2, 4, 5, 6]
-  const collection_b = [2, 3, 4, 5, 6]
+  const collection_b = [6, 5, 4, 3, 2]
 
-  it.skip('从小到大排序', () => {
+  it.skip('从大到小排序', () => {
     const result = sortDescendingly(collection_a)
     expect(result).toEqual(collection_b)
   })
