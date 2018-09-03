@@ -42,7 +42,7 @@ describe('mapNumberToWord', () => {
   const collection_a = [1, 2, 3, 4, 5]
   const collection_b = ['a', 'b', 'c', 'd', 'e']
 
-  it.skip('数字映射为字母', () => {
+  it('数字映射为字母', () => {
     const result = mapNumberToWord(collection_a)
     expect(result).toEqual(collection_b)
   })

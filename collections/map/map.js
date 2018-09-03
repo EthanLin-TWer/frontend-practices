@@ -1,3 +1,10 @@
+const wordsMap = {
+  1: 'a',
+  2: 'b',
+  3: 'c',
+  4: 'd',
+  5: 'e',
+}
 export const mapToEven = (collection) => {
   return collection.map((element) => element * 2)
 }
@@ -11,7 +18,7 @@ export const mapToThreeMultiples = (collection) => {
 }
 
 export const mapNumberToWord = (collection) => {
-  return [collection]
+  return collection.map((number) => wordsMap[number])
 }
 
 export const mapNumberToWordOver26 = (collection) => {
