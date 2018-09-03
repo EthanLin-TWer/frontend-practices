@@ -14,9 +14,7 @@ export const compareCollections = (collection_a, collection_b) => {
 }
 
 export const computeAverage = (collection) => {
-  return (
-    collection.reduce((total, number) => total + number, 0) / collection.length
-  )
+  return computeSum(collection) / collection.length
 }
 
 export const computeChainMedian = (collection) => {
@@ -40,13 +38,11 @@ export const computeSum = (collection) => {
 }
 
 export const calculateFirstSubscription = (collection, finding) => {
-  return collection.indexOf(collection.find((element) => element === finding))
+  return collection.indexOf(finding)
 }
 
 export const calculateLastSubscription = (collection, finding) => {
-  return collection.lastIndexOf(
-    collection.find((element) => element === finding)
-  )
+  return collection.lastIndexOf(finding)
 }
 
 export const findFirstEven = (collection) => {
