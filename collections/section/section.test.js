@@ -16,7 +16,7 @@ describe('collectSameElements', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = ['a', 'd', 'e', 'f']
 
-  it.skip('选出A集合中与B集合中相同的元素', () => {
+  it('选出A集合中与B集合中相同的元素', () => {
     const result = collectSameElements(collection_a, collection_b)
 
     expect(result).toEqual(['a', 'e', 'f', 'd'])
