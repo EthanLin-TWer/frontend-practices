@@ -39,5 +39,7 @@ export const getLetterInterval2 = (number_a, number_b) => {
 }
 
 export const getUnion = (collection_a, collection_b) => {
-  return [collection_a, collection_b]
+  return collection_a.concat(
+    collection_b.filter((element) => !collection_a.includes(element))
+  )
 }
