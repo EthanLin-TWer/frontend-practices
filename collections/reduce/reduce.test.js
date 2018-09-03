@@ -25,7 +25,7 @@ describe('collectMaxNumber', () => {
 describe('collectMinNumber', () => {
   const collection = [1, 8, 9, 21, 5]
 
-  it.skip('选出给定数字集合元素的最小值', () => {
+  it('选出给定数字集合元素的最小值', () => {
     const result = collectMinNumber(collection)
     expect(result).toEqual(1)
   })

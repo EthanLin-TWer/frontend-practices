@@ -5,7 +5,9 @@ export const collectMaxNumber = (collection) => {
 }
 
 export const collectMinNumber = (collection) => {
-  return [collection]
+  return collection.reduce((result, element) => {
+    return result && result < element ? result : element
+  }, null)
 }
 
 export const compareCollections = (collection_a, collection_b) => {
