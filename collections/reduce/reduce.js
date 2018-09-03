@@ -62,7 +62,12 @@ export const findFirstEven = (collection) => {
 }
 
 export const findLastEven = (collection) => {
-  return [collection]
+  for (const element of collection.reverse()) {
+    if (element % 2 === 0) {
+      return element
+    }
+  }
+  return -1
 }
 
 export const splitToZero = (number, internal) => {

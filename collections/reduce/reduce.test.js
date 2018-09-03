@@ -126,7 +126,7 @@ describe('findFirstEven', () => {
 describe('findLastEven', () => {
   const collection = [1, 11, 27, 20, 4, 9, 15]
 
-  it.skip('找出给定集合元素的最后一个偶数', () => {
+  it('找出给定集合元素的最后一个偶数', () => {
     const result = findLastEven(collection)
 
     expect(result).toEqual(4)
