@@ -29,7 +29,7 @@ describe('average_to_letter', () => {
 describe('multipleAndComputeSum', () => {
   const collection = [1, 5, 7, 11, 35, 67]
 
-  it.skip('每一个数*3 +2再算总和', () => {
+  it('每一个数*3 +2再算总和', () => {
     const result = multipleAndComputeSum(collection)
 
     expect(result).toEqual(390)

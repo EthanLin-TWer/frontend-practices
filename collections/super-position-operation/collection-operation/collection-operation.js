@@ -17,6 +17,8 @@ export const averageToLetter = (collection) => {
 
 export const multipleAndComputeSum = (collection) => {
   return collection
+    .map((number) => number * 3 + 2)
+    .reduce((total, number) => total + number, 0)
 }
 
 export const multipleOddAndAdd = (collection) => {
