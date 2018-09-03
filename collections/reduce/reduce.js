@@ -1,15 +1,11 @@
 import { sortAscendingly } from '../map/map'
 
 export const collectMaxNumber = (collection) => {
-  return collection.reduce((result, element) => {
-    return result && result > element ? result : element
-  }, null)
+  return collection.reduce((result, element) => Math.max(result, element))
 }
 
 export const collectMinNumber = (collection) => {
-  return collection.reduce((result, element) => {
-    return result && result < element ? result : element
-  }, null)
+  return collection.reduce((result, element) => Math.min(result, element))
 }
 
 export const compareCollections = (collection_a, collection_b) => {
