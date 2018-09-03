@@ -1,9 +1,7 @@
-import { words } from '../../utils'
+import { evens, odds, words } from '../../utils'
 
 export const evenToLetter = (collection) => {
-  return collection
-    .filter((element) => element % 2 === 0)
-    .map((number) => words[number - 1])
+  return collection.filter(evens).map((number) => words[number - 1])
 }
 
 export const averageToLetter = (collection) => {
@@ -29,7 +27,7 @@ export const multipleOddAndAdd = (collection) => {
 
 export const multipleOddAndComputeSum = (collection) => {
   return collection
-    .filter((number) => number % 2 !== 0)
+    .filter(odds)
     .map((number) => number * 3 + 5)
     .reduce((total, number) => total + number, 0)
 }
