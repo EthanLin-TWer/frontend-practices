@@ -9,7 +9,7 @@ import {
 describe('even_to_letter', () => {
   const collection = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  it.skip('数组的每个偶数映射为字母', () => {
+  it('数组的每个偶数映射为字母', () => {
     const result = evenToLetter(collection)
 
     expect(result).toEqual(['b', 'd', 'f', 'h', 'j'])
