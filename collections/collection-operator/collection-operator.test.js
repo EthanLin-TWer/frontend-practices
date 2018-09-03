@@ -76,7 +76,7 @@ describe('getEvenIntegerInterval', () => {
 describe('getIntersection', () => {
   const collection_a = [10, 27, 28, 19, 5]
   const collection_b = [5, 78, 28, 19, 23]
-  const collection_c = [5, 28, 19]
+  const collection_c = [28, 19, 5]
 
   it.skip('弹出两个集合的交集', () => {
     const result = getIntersection(collection_a, collection_b)
