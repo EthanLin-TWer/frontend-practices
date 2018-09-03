@@ -25,7 +25,9 @@ export const getEvenIntegerInterval = (number_a, number_b) => {
 }
 
 export const getIntersection = (collection_a, collection_b) => {
-  return [collection_a, collection_b]
+  return collection_a.filter((element) => {
+    return collection_b.includes(element)
+  })
 }
 
 export const getLetterInterval = (number_a, number_b) => {

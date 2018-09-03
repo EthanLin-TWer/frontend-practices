@@ -78,7 +78,7 @@ describe('getIntersection', () => {
   const collection_b = [5, 78, 28, 19, 23]
   const collection_c = [28, 19, 5]
 
-  it.skip('弹出两个集合的交集', () => {
+  it('弹出两个集合的交集', () => {
     const result = getIntersection(collection_a, collection_b)
     expect(result).toEqual(collection_c)
   })
