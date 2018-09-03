@@ -77,12 +77,12 @@ describe('evenGroupCalculateAverage', () => {
 describe('isExistElement', () => {
   const collection_a = [1, 2, 3, 4, 5, 6]
 
-  it.skip('下标为偶数的元素中，存在3', () => {
+  it('下标为偶数的元素中，存在3', () => {
     const result = isExistElement(collection_a, 3)
     expect(result).toEqual(true)
   })
 
-  it.skip('下标为偶数的元素中，不存在4', () => {
+  it('下标为偶数的元素中，不存在4', () => {
     const result = isExistElement(collection_a, 4)
     expect(result).toEqual(false)
   })

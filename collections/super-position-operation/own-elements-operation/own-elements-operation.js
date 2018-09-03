@@ -13,7 +13,7 @@ export const evenGroupCalculateAverage = (collection) => {
 }
 
 export const isExistElement = (collection, element) => {
-  return [collection, element]
+  return collection.filter((element, i) => i % 2 === 0).includes(element)
 }
 
 export const singleElement = (collection) => {
