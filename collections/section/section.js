@@ -10,7 +10,7 @@ export const collectSameElementsWithinObjectValue = (
   collection_a,
   collection_b
 ) => {
-  return [collection_a, collection_b]
+  return collection_a.filter((element) => collection_b.value.includes(element))
 }
 
 export const collectSameElementsInBothObjectKeysAndValues = (

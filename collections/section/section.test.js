@@ -38,7 +38,7 @@ describe('collectSameElementsWithinObjectValue', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中跟B对象中value属性中的元素相同的元素', () => {
+  it('选出A集合中跟B对象中value属性中的元素相同的元素', () => {
     const result = collectSameElementsWithinObjectValue(
       collection_a,
       collection_b
