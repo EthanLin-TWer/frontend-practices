@@ -1,5 +1,7 @@
+import { evens } from '../utils'
+
 export const chooseEven = (collection) => {
-  return collection.filter((element) => element % 2 === 0)
+  return collection.filter(evens)
 }
 
 export const chooseMultiplesOfThree = (collection) => {
@@ -8,10 +10,7 @@ export const chooseMultiplesOfThree = (collection) => {
 
 export const chooseNoRepeatNumber = (collection) => {
   return collection.reduce((result, next) => {
-    if (!result.includes(next)) {
-      return result.concat(next)
-    }
-    return result
+    return result.includes(next) ? result : result.concat(next)
   }, [])
 }
 

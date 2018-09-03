@@ -1,4 +1,5 @@
 import { sortAscendingly } from '../map/map'
+import { evens } from '../utils'
 
 export const collectMaxNumber = (collection) => {
   return collection.reduce((result, element) => Math.max(result, element))
@@ -49,21 +50,11 @@ export const calculateLastSubscription = (collection, finding) => {
 }
 
 export const findFirstEven = (collection) => {
-  for (const element of collection) {
-    if (element % 2 === 0) {
-      return element
-    }
-  }
-  return -1
+  return collection.filter(evens)[0]
 }
 
 export const findLastEven = (collection) => {
-  for (const element of collection.reverse()) {
-    if (element % 2 === 0) {
-      return element
-    }
-  }
-  return -1
+  return collection.filter(evens).reverse()?.[0]
 }
 
 export const splitToZero = (number, internal) => {

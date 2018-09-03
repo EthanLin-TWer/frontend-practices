@@ -1,7 +1,7 @@
-import { words } from '../utils'
+import { multiplier, words } from '../utils'
 
 export const mapToEven = (collection) => {
-  return collection.map((element) => element * 2)
+  return collection.map(multiplier(2))
 }
 
 export const mapToFourMultiplesAddOne = (collection) => {
@@ -9,7 +9,7 @@ export const mapToFourMultiplesAddOne = (collection) => {
 }
 
 export const mapToThreeMultiples = (collection) => {
-  return collection.map((element) => element * 3)
+  return collection.map(multiplier(3))
 }
 
 export const mapNumberToWord = (collection) => {
@@ -21,15 +21,9 @@ export const mapNumberToWordOver26 = (collection) => {
 }
 
 export const sortAscendingly = (collection) => {
-  return []
-    .concat(collection)
-    .map((number) => Number(number))
-    .sort((a, b) => a - b)
+  return [].concat(collection).sort((a, b) => a - b)
 }
 
 export const sortDescendingly = (collection) => {
-  return []
-    .concat(collection)
-    .map((number) => Number(number))
-    .sort((a, b) => b - a)
+  return [].concat(collection).sort((a, b) => b - a)
 }

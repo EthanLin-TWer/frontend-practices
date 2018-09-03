@@ -29,3 +29,7 @@ export const words = [
 
 export const evens = (element) => element % 2 === 0
 export const odds = (element) => element % 2 !== 0
+
+export const multiplier = (multiple) => (element) => {
+  return element * multiple
+}

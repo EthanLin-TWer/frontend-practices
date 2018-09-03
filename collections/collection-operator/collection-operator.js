@@ -1,5 +1,7 @@
+import { evens } from '../utils'
+
 export const collectAllEven = (collection) => {
-  return collection.filter((number) => number % 2 === 0)
+  return collection.filter(evens)
 }
 
 export const collectLastElement = (collection) => {
