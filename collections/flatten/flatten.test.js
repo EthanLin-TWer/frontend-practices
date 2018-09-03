@@ -6,7 +6,7 @@ import {
 describe('double_to_one', () => {
   const collection = [1, [2], [3, 4]]
 
-  it.skip('把二维数组变成一维数组', () => {
+  it('把二维数组变成一维数组', () => {
     const result = twoDimensionalArrayToOne(collection)
 
     expect(result).toEqual([1, 2, 3, 4])
