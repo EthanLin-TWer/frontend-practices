@@ -1,3 +1,4 @@
+import { computeSum } from '../../reduce/reduce'
 import { evens, odds, words } from '../../utils'
 
 export const evenToLetter = (collection) => {
@@ -14,20 +15,13 @@ export const averageToLetter = (collection) => {
 }
 
 export const multipleAndComputeSum = (collection) => {
-  return collection
-    .map((number) => number * 3 + 2)
-    .reduce((total, number) => total + number, 0)
+  return computeSum(collection.map((number) => number * 3 + 2))
 }
 
 export const multipleOddAndAdd = (collection) => {
-  return collection
-    .filter((number) => number % 2 !== 0)
-    .map((number) => number * 3 + 2)
+  return collection.filter(odds).map((number) => number * 3 + 2)
 }
 
 export const multipleOddAndComputeSum = (collection) => {
-  return collection
-    .filter(odds)
-    .map((number) => number * 3 + 5)
-    .reduce((total, number) => total + number, 0)
+  return computeSum(collection.filter(odds).map((number) => number * 3 + 5))
 }
