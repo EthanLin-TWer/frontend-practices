@@ -32,7 +32,7 @@ describe('mapToThreeMultiples', () => {
   const collection_a = [1, 3, 5, 4, 9]
   const collection_b = [3, 9, 15, 12, 27]
 
-  it.skip('三倍映射', () => {
+  it('三倍映射', () => {
     const result = mapToThreeMultiples(collection_a)
     expect(result).toEqual(collection_b)
   })

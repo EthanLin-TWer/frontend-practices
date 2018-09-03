@@ -7,7 +7,7 @@ export const mapToFourMultiplesAddOne = (collection) => {
 }
 
 export const mapToThreeMultiples = (collection) => {
-  return [collection]
+  return collection.map((element) => element * 3)
 }
 
 export const mapNumberToWord = (collection) => {
