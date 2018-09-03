@@ -65,17 +65,17 @@ describe('computeMedian', () => {
   const collection_b = [1, 1, 2, 3]
   const collection_c = [1, 4, 6, 2, 3, 10, 9, 8, 11, 20, 19, 30]
 
-  it.skip('计算给定奇数个数字的集合的中位数', () => {
+  it('计算给定奇数个数字的集合的中位数', () => {
     const result = computeMedian(collection_a)
     expect(result).toEqual(1)
   })
 
-  it.skip('计算给定偶数个数字的集合的中位数', () => {
+  it('计算给定偶数个数字的集合的中位数', () => {
     const result = computeMedian(collection_b)
     expect(result).toEqual(1.5)
   })
 
-  it.skip('计算给定偶数个数字的集合的中位数-2', () => {
+  it('计算给定偶数个数字的集合的中位数2', () => {
     const result = computeMedian(collection_c)
     expect(result).toEqual(8.5)
   })

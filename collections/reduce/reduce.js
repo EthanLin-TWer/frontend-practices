@@ -31,7 +31,11 @@ export const computeChainMedian = (collection) => {
 }
 
 export const computeMedian = (collection) => {
-  return [collection]
+  const sorted = sortAscendingly(collection)
+  if (sorted.length % 2 === 0) {
+    return (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2
+  }
+  return sorted[(sorted.length - 1) / 2]
 }
 
 export const computeSum = (collection) => {
