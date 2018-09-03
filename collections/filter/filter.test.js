@@ -52,7 +52,7 @@ describe('chooseCommonElements', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = ['a', 'd', 'e', 'f']
 
-  it.skip('选出A集合中与B集合中的共有元素', () => {
+  it('选出A集合中与B集合中的共有元素', () => {
     const result = chooseCommonElements(collection_a, collection_b)
 
     expect(result).toEqual(['a', 'e', 'f', 'd'])

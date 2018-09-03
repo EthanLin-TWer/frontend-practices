@@ -31,7 +31,7 @@ export const groupingCount = (collection) => {
 }
 
 export const chooseCommonElements = (collection_a, collection_b) => {
-  return [collection_a, collection_b]
+  return collection_a.filter((element) => collection_b.includes(element))
 }
 
 export const chooseNoCommonElements = (collection_a, collection_b) => {
