@@ -23,6 +23,8 @@ export const multipleAndComputeSum = (collection) => {
 
 export const multipleOddAndAdd = (collection) => {
   return collection
+    .filter((number) => number % 2 !== 0)
+    .map((number) => number * 3 + 2)
 }
 
 export const multipleOddAndComputeSum = (collection) => {

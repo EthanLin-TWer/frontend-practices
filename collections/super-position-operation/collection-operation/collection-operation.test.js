@@ -39,7 +39,7 @@ describe('multipleAndComputeSum', () => {
 describe('multipleOddAndComputeSum', () => {
   const collection = [1, 5, 7, 12, 11, 35, 54, 67, 70]
 
-  it.skip('每一个奇数*3+2', () => {
+  it('每一个奇数*3+2', () => {
     const result = multipleOddAndAdd(collection)
 
     expect(result).toEqual([5, 17, 23, 35, 107, 203])
