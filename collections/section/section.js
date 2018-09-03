@@ -77,7 +77,12 @@ export const countSameElementsWithDifferentCountsFormat = (collection) => {
 }
 
 export const createUpdatedCollection = (collection_a, object_b) => {
-  return [collection_a, object_b]
+  return collection_a.map(({ key, count }) => {
+    return {
+      key,
+      count: object_b.value.includes(key) ? count - 1 : count,
+    }
+  })
 }
 
 export const createUpdatedCollection2 = (collection_a, object_b) => {
