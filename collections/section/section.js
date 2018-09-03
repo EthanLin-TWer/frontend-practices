@@ -48,7 +48,32 @@ export const countSameElementsWithMultipleCounts = (collection) => {
 }
 
 export const countSameElementsWithDifferentCountsFormat = (collection) => {
-  return [collection]
+  const parseCounts = (word) => {
+    if (word.includes('-')) {
+      return word.split('-')
+    }
+    if (word.includes(':')) {
+      return word.split(':')
+    }
+    if (/\[\d*]/.test(word)) {
+      // eslint-disable-next-line no-unused-vars
+      const [full, actualWord, matchedCount] = /(.*)\[(\d*)]/.exec(word)
+      return [actualWord, matchedCount]
+    }
+
+    return [word, 1]
+  }
+
+  const elements = collection.map(parseCounts)
+  const words = chooseNoRepeatNumber(elements.map(([word]) => word))
+
+  return words.map((word) => ({
+    name: word,
+    summary: elements
+      .filter(([key]) => key === word)
+      // eslint-disable-next-line no-unused-vars
+      .reduce((total, [key, count]) => total + Number(count), 0),
+  }))
 }
 
 export const createUpdatedCollection = (collection_a, object_b) => {

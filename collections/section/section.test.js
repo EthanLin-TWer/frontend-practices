@@ -318,7 +318,7 @@ describe('countSameElementsWithDifferentCountsFormat', () => {
     'd-5',
   ]
 
-  it.skip('把A集合中相同的元素统计出数量', () => {
+  it('把A集合中相同的元素统计出数量', () => {
     const result = countSameElementsWithDifferentCountsFormat(collection)
 
     expect(result).toEqual([
