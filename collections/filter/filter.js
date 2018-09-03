@@ -7,7 +7,12 @@ export const chooseMultiplesOfThree = (collection) => {
 }
 
 export const chooseNoRepeatNumber = (collection) => {
-  return [collection]
+  return collection.reduce((result, next) => {
+    if (!result.includes(next)) {
+      return result.concat(next)
+    }
+    return result
+  }, [])
 }
 
 export const groupingCount = (collection) => {

@@ -31,7 +31,7 @@ describe('chooseMultiplesOfThree', () => {
 describe('chooseNoRepeatNumber', () => {
   const collection = [1, 1, 1, 2, 2, 3, 4]
 
-  it.skip('从collection中选出不重复的数字', () => {
+  it('从collection中选出不重复的数字', () => {
     const result = chooseNoRepeatNumber(collection)
 
     expect(result).toEqual([1, 2, 3, 4])
