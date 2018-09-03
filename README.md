@@ -1,5 +1,9 @@
 # 刻意练习
 
-forked from [tws-practice/collection-calculate-camp][]
+Credits to: 
+
+* [tws-practice/collection-calculate-camp][]
+* [es6kata][]
 
 [tws-practice/collection-calculate-camp]: https://github.com/tws-practice/collection-calculate-camp 
+[es6kata]: http://es6katas.org
