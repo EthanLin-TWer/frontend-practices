@@ -1,5 +1,7 @@
+import { computeAverage } from '../../reduce/reduce'
+
 export const calculateAverage = (collection) => {
-  return collection
+  return computeAverage(collection.filter((number) => number % 2 === 0))
 }
 
 export const calculateMedian = (collection) => {

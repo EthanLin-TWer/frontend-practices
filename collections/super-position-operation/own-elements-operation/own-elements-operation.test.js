@@ -12,7 +12,7 @@ import {
 describe('calculateAverage', () => {
   const collection_a = [1, 2, 3, 4, 5, 6]
 
-  it.skip('计算第偶数个元素的平均数', () => {
+  it('计算第偶数个元素的平均数', () => {
     const result = calculateAverage(collection_a)
     expect(result).toEqual(4)
   })
