@@ -97,7 +97,7 @@ export const createUpdatedCollection2 = (collection_a, object_b) => {
 }
 
 export const countAndMinusIntersectionally = (collection_a, object_b) => {
-  return [collection_a, object_b]
+  return createUpdatedCollection2(countSameElements(collection_a), object_b)
 }
 
 export const countAndMinusIntersectionallyWithMultiplesCounts = (
