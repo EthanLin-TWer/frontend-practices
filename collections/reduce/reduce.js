@@ -15,7 +15,9 @@ export const compareCollections = (collection_a, collection_b) => {
 }
 
 export const computeAverage = (collection) => {
-  return [collection]
+  return (
+    collection.reduce((total, number) => total + number, 0) / collection.length
+  )
 }
 
 export const computeChainMedian = (collection) => {
