@@ -7,7 +7,12 @@ export const evenToLetter = (collection) => {
 }
 
 export const averageToLetter = (collection) => {
-  return collection
+  return words[
+    Math.round(
+      collection.reduce((total, number) => total + number, 0) /
+        collection.length
+    ) - 1
+  ]
 }
 
 export const multipleAndComputeSum = (collection) => {
