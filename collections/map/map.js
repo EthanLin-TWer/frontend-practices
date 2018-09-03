@@ -3,7 +3,7 @@ export const mapToEven = (collection) => {
 }
 
 export const mapToFourMultiplesAddOne = (collection) => {
-  return [collection]
+  return collection.map((element) => element * 4 + 1)
 }
 
 export const mapToThreeMultiples = (collection) => {

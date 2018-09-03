@@ -22,7 +22,7 @@ describe('mapToFourMultiplesAddOne', () => {
   const collection_a = [1, 2, 3, 4, 5]
   const collection_b = [5, 9, 13, 17, 21]
 
-  it.skip('四倍加一', () => {
+  it('四倍加一', () => {
     const result = mapToFourMultiplesAddOne(collection_a)
     expect(result).toEqual(collection_b)
   })
