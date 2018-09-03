@@ -1,3 +1,5 @@
+import { sortAscendingly } from '../map/map'
+
 export const collectMaxNumber = (collection) => {
   return collection.reduce((result, element) => {
     return result && result > element ? result : element
@@ -21,7 +23,11 @@ export const computeAverage = (collection) => {
 }
 
 export const computeChainMedian = (collection) => {
-  return [collection]
+  const sorted = sortAscendingly(collection.split('->').map(Number))
+  if (sorted.length % 2 === 0) {
+    return (sorted[sorted.length / 2 - 1] + sorted[sorted.length / 2]) / 2
+  }
+  return sorted[(sorted.length - 1) / 2]
 }
 
 export const computeMedian = (collection) => {

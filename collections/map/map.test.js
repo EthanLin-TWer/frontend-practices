@@ -59,8 +59,8 @@ describe('mapNumberToWordOver26', () => {
 })
 
 describe('sortAscendingly', () => {
-  const collection_a = [3, 2, 4, 5, 6]
-  const collection_b = [2, 3, 4, 5, 6]
+  const collection_a = [1, 4, 6, 2, 3, 10, 9, 8, 11, 20, 19, 30]
+  const collection_b = [1, 2, 3, 4, 6, 8, 9, 10, 11, 19, 20, 30]
 
   it('从小到大排序', () => {
     const result = sortAscendingly(collection_a)
