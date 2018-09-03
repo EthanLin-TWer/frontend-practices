@@ -18,6 +18,10 @@ export const isExistElement = (collection, element) => {
 
 export const singleElement = (collection) => {
   return collection
+    .filter((element, i) => i % 2 !== 0)
+    .filter((element, index, all) => {
+      return all.filter((ones) => ones === element).length <= 1
+    })
 }
 
 export const evenAscOddDesc = (collection) => {

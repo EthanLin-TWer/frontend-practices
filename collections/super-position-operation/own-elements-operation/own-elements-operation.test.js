@@ -92,12 +92,12 @@ describe('singleElement', () => {
   const collection_a = [1, 2, 3, 2, 5, 6, 21, 43, 12, 5]
   const collection_b = [11, 11, 22, 11, 33, 11]
 
-  it.skip('第偶数个元素中，选出不重复的元素', () => {
+  it('第偶数个元素中，选出不重复的元素', () => {
     const result = singleElement(collection_a)
     expect(result).toEqual([6, 43, 5])
   })
 
-  it.skip('第偶数个元素中，选出不重复的元素', () => {
+  it('第偶数个元素中，选出不重复的元素', () => {
     const result = singleElement(collection_b)
     expect(result).toEqual([])
   })
