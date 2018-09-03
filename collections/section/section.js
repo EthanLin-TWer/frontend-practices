@@ -104,5 +104,8 @@ export const countAndMinusIntersectionallyWithMultiplesCounts = (
   collection_a,
   object_b
 ) => {
-  return [collection_a, object_b]
+  return createUpdatedCollection2(
+    countSameElementsWithMultipleCounts(collection_a),
+    object_b
+  )
 }

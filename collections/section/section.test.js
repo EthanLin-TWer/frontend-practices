@@ -576,7 +576,7 @@ describe('countAndMinusIntersectionallyWithMultiplesCounts', () => {
 
   const object_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('统计出A集合中相同的元素的个数，有过有-就把-右边的数字也计算入个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', () => {
+  it('统计出A集合中相同的元素的个数，有过有-就把-右边的数字也计算入个数，形成C集合，C集合中的元素要形如{key:"a", count: 3}，然后选出C集合中的元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新C集合', () => {
     const result = countAndMinusIntersectionallyWithMultiplesCounts(
       collection_a,
       object_b
