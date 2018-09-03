@@ -63,7 +63,7 @@ describe('chooseNoCommonElements', () => {
   const collection_a = ['a', 'e', 'h', 't', 'f', 'c', 'g', 'b', 'd']
   const collection_b = ['a', 'd', 'e', 'f']
 
-  it.skip('选出A集合中与B集合中的不共有元素', () => {
+  it('选出A集合中与B集合中的不共有元素', () => {
     const result = chooseNoCommonElements(collection_a, collection_b)
 
     expect(result).toEqual(['h', 't', 'c', 'g', 'b'])
