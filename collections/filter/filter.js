@@ -39,5 +39,7 @@ export const chooseNoCommonElements = (collection_a, collection_b) => {
 }
 
 export const chooseDivisibleInteger = (collection_a, collection_b) => {
-  return [collection_a, collection_b]
+  return collection_a.filter((element) =>
+    collection_b.some((b) => element % b === 0)
+  )
 }
