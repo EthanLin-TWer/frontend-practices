@@ -86,7 +86,14 @@ export const createUpdatedCollection = (collection_a, object_b) => {
 }
 
 export const createUpdatedCollection2 = (collection_a, object_b) => {
-  return [collection_a, object_b]
+  return collection_a.map(({ key, count }) => {
+    return {
+      key,
+      count: object_b.value.includes(key)
+        ? count - Math.floor(count / 3)
+        : count,
+    }
+  })
 }
 
 export const countAndMinusIntersectionally = (collection_a, object_b) => {

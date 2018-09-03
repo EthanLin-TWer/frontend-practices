@@ -382,7 +382,7 @@ describe('createUpdatedCollection2', () => {
 
   const object_b = { value: ['a', 'd', 'e', 'f'] }
 
-  it.skip('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新A集', () => {
+  it('选出A集合中元素的key属性跟B对象中value属性中的元素相同的元素,把他们的count，满3减1，输出减过之后的新A集', () => {
     const result = createUpdatedCollection2(collection_a, object_b)
 
     expect(result).toEqual([
