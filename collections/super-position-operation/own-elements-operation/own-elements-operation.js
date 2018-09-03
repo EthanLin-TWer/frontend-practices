@@ -1,5 +1,6 @@
-import { chooseEven } from '../../filter/filter'
+import { sortAscendingly, sortDescendingly } from '../../map/map'
 import { computeAverage } from '../../reduce/reduce'
+import { evens, odds } from '../../utils'
 
 export const calculateAverage = (collection) => {
   return computeAverage(collection.filter((number) => number % 2 === 0))
@@ -26,8 +27,10 @@ export const singleElement = (collection) => {
 }
 
 export const evenAscOddDesc = (collection) => {
-  const evens = chooseEven(collection)
-  return evens
+  return [
+    ...sortAscendingly(collection.filter(evens)),
+    ...sortDescendingly(collection.filter(odds)),
+  ]
 }
 
 export const oneAddNextMultiplyThree = (collection) => {
