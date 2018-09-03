@@ -152,7 +152,7 @@ describe('countSameElements', () => {
     'd',
   ]
 
-  it.skip('把A集合中相同的元素统计出数量', () => {
+  it('把A集合中相同的元素统计出数量', () => {
     const result = countSameElements(collection)
 
     expect(result).toEqual([

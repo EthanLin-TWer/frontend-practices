@@ -16,14 +16,7 @@ export const chooseNoRepeatNumber = (collection) => {
 }
 
 export const groupingCount = (collection) => {
-  const uniqNumbers = collection.reduce((result, next) => {
-    if (!result.includes(next)) {
-      return result.concat(next)
-    }
-    return result
-  }, [])
-
-  return uniqNumbers
+  return chooseNoRepeatNumber(collection)
     .map((number) => ({
       [number]: collection.filter((element) => element === number).length,
     }))

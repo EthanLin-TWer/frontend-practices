@@ -1,3 +1,5 @@
+import { chooseNoRepeatNumber } from '../filter/filter'
+
 export const collectSameElements = (collection_a, collection_b) => {
   return collection_a.filter((element) => collection_b.includes(element))
 }
@@ -23,7 +25,13 @@ export const collectSameElementsInBothObjectKeysAndValues = (
 }
 
 export const countSameElements = (collection) => {
-  return [collection]
+  return chooseNoRepeatNumber(collection).map((word) => ({
+    key: word,
+    count: collection.reduce(
+      (total, element) => total + (element === word ? 1 : 0),
+      0
+    ),
+  }))
 }
 
 export const countSameElementsWithMultipleCounts = (collection) => {
