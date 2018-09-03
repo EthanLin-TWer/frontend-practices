@@ -34,7 +34,15 @@ export const evenAscOddDesc = (collection) => {
 }
 
 export const oneAddNextMultiplyThree = (collection) => {
-  return collection
+  const results = collection.map((value, index, all) => {
+    if (all.length === index + 1) {
+      return null
+    }
+    return (value + all[index + 1]) * 3
+  })
+
+  results.pop()
+  return results
 }
 
 export const rankByTwoLargeOneSmall = (collection) => {
