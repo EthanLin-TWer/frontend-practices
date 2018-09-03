@@ -47,9 +47,9 @@ export const mapNumberToWordOver26 = (collection) => {
 }
 
 export const sortAscendingly = (collection) => {
-  return [collection]
+  return collection.map((number) => number).sort((a, b) => a > b)
 }
 
 export const sortDescendingly = (collection) => {
-  return [collection]
+  return collection.map((number) => number).sort((a, b) => b > a)
 }
