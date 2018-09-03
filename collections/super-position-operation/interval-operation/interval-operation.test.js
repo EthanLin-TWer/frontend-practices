@@ -7,7 +7,7 @@ import {
 describe('amount_even', () => {
   const collection = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  it.skip('1-10的偶数算总数', () => {
+  it('1-10的偶数算总数', () => {
     const result = computerEvenSum(collection)
 
     expect(result).toEqual(30)
