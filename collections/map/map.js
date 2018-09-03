@@ -1,5 +1,5 @@
 export const mapToEven = (collection) => {
-  return [collection]
+  return collection.map((element) => element * 2)
 }
 
 export const mapToFourMultiplesAddOne = (collection) => {
