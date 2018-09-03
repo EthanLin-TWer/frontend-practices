@@ -53,7 +53,12 @@ export const calculateLastSubscription = (collection, finding) => {
 }
 
 export const findFirstEven = (collection) => {
-  return [collection]
+  for (const element of collection) {
+    if (element % 2 === 0) {
+      return element
+    }
+  }
+  return -1
 }
 
 export const findLastEven = (collection) => {
