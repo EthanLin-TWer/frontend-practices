@@ -5,7 +5,8 @@ export const computerEvenSum = (collection) => {
 }
 
 export const computeOddSum = (collection) => {
-  return [collection]
+  const odds = collection.filter((number) => number % 2 !== 0)
+  return odds.reduce((total, number) => total + number, 0) / odds.length
 }
 
 export const medianToLetter = (collection) => {

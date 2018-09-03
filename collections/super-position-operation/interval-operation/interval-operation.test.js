@@ -17,7 +17,7 @@ describe('amount_even', () => {
 describe('computeOddSum', () => {
   const collection = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  it.skip('1-10的奇数算平均数', () => {
+  it('1-10的奇数算平均数', () => {
     const result = computeOddSum(collection)
 
     expect(result).toEqual(5)
