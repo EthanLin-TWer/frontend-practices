@@ -48,9 +48,14 @@
     }
   },
   "lint-staged": {
-    "**/*.js": [
-      "npm run lint -- --fix",
-      "git add ."
+    "linters": {
+      "*.js": [
+        "npm run lint -- --fix",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "node_modules/"
     ]
   }
 }
