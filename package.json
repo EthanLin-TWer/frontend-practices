@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "lint": "eslint collections",
+    "lint": "eslint collections refactor tdd",
     "test": "jest",
     "test:watch": "jest --watch",
     "rebase": "./scripts/rebase-answer-branches-onto-master.sh"
