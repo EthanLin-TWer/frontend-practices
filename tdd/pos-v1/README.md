@@ -1,6 +1,6 @@
 # POS Project v1
 
-POS 收银机 版本：v1
+POS 收银机 v1
 
 ## 需求描述
 
@@ -8,7 +8,7 @@ POS 收银机 版本：v1
 
 已知该商店正在对部分商品进行“买二赠一”的优惠活动。
 
-我们需要实现一个名为`printInventory`函数，该函数能够将指定格式的数据作为参数输入，然后在浏览器的控制台中输出结算清单的文本。
+我们需要实现一个名为 `printInventory` 函数，该函数能够将指定格式的数据作为参数输入，然后在浏览器的控制台中输出结算清单的文本。
 
 输入格式（样例）：
 
@@ -48,45 +48,37 @@ POS 收银机 版本：v1
 
 ## 作业提示
 
-1. 可使用`loadAllItems()`方法获取全部的商品，该方法返回结果为一个包含了商品对象的数组（样例）：
+可使用`loadItems()`方法获取全部的商品，该方法返回结果为一个包含了商品对象的数组（样例）：
 
-   ```
-   [ item1, item2, item3, ..., itemN ]
-   ```
+```javascript
+[ item1, item2, item3, ..., itemN ]
+```
 
-2. 每一个商品对象的结构如下（样例）：
+每一个商品对象的结构如下（样例）：
 
-   ```javascript
-   {
-      barcode: 'ITEM000000',
-      name: '可口可乐',
-      unit: '瓶',
-      price: 3.00
-   }
-   ```
+```javascript
+{
+   barcode: 'ITEM000000',
+   name: '可口可乐',
+   unit: '瓶',
+   price: 3.00
+}
+```
 
-3. 可使用`loadPromotions()`方法获取全部的促销信息，该方法返回结果为一个包含有促销信息对象的数组（样例）：
+可使用`loadPromotions()`方法获取全部的促销信息，该方法返回结果为一个包含有促销信息对象的数组（样例）：
 
-   ```javascript
-   [
-     {
-       type: 'BUY_TWO_GET_ONE_FREE',
-       barcodes: ['ITEM000000', 'ITEM000001'],
-     },
-     {
-       type: 'OTHER_PROMOTION',
-       barcodes: ['ITEM000003', 'ITEM000004'],
-     },
-   ]
-   ```
-
-4. 应学习并善于使用各种流行浏览器所附带的开发人员工具中的控制台（Console）功能。
+```javascript
+[
+  {
+    type: 'BUY_TWO_GET_ONE_FREE',
+    barcodes: ['ITEM000000', 'ITEM000001'],
+  },
+]
+```
 
 ## 如何使用
-
 
 ```bash
 npm install
 npm test
 ```
-
