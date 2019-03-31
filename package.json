@@ -5,6 +5,10 @@
     "test:watch": "jest --watch",
     "rebase": "./scripts/rebase-answer-branches-onto-master.sh"
   },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "ramda": "^0.25.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
@@ -57,9 +61,5 @@
     "ignore": [
       "node_modules/"
     ]
-  },
-  "dependencies": {
-    "lodash": "^4.17.11",
-    "ramda": "^0.25.0"
   }
 }
