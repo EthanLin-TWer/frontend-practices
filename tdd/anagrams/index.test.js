@@ -16,4 +16,8 @@ describe('anagrams', () => {
   it('should return false when the first word is not an anagram of document', () => {
     expect(isAnagramToWordDocument(['dior', 'do'])).toEqual(false)
   })
+
+  it('should return false when the second word is not an anagram of document', () => {
+    expect(isAnagramToWordDocument(['do', 'bot'])).toEqual(false)
+  })
 })

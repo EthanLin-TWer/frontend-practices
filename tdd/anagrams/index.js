@@ -3,7 +3,9 @@ function findAllPossibleTwoWordsCombination() {
 }
 
 export function isAnagramToWordDocument(words) {
-  return !words.some((word) => word.includes('i'))
+  return words.every((word) =>
+    Array.from(word).every((character) => 'document'.includes(character))
+  )
 }
 
 export const anagrams = () => {
