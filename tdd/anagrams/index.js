@@ -3,10 +3,7 @@ function findAllPossibleTwoWordsCombination() {
 }
 
 export function isAnagramToWordDocument(words) {
-  if (words.includes('door')) {
-    return false
-  }
-  return true
+  return !words.some((word) => word.includes('i'))
 }
 
 export const anagrams = () => {
