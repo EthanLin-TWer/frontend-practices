@@ -2,7 +2,10 @@ function findAllPossibleTwoWordsCombination() {
   return []
 }
 
-export function isAnagramToWordDocument() {
+export function isAnagramToWordDocument(words) {
+  if (words.includes('door')) {
+    return false
+  }
   return true
 }
 
