@@ -2,7 +2,7 @@ function findAllPossibleTwoWordsCombination() {
   return []
 }
 
-function isAnagramToWordDocument() {
+export function isAnagramToWordDocument() {
   return true
 }
 
