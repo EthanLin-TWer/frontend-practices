@@ -22,9 +22,12 @@ export class CommandLine {
   }
 
   parse() {
-    const [, flag] = this.commands.split('-')
-    const [alias] = flag.split(' ')
-
-    return createCommand(alias, flag).parse()
+    const [, ...commands] = this.commands.split('-')
+    return commands
+      .map((command) => {
+        const [alias] = command.split(' ')
+        return createCommand(alias, command).parse()
+      })
+      .reduce((a, b) => ({ ...a, ...b }), {})
   }
 }

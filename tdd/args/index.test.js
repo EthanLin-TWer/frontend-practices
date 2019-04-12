@@ -23,3 +23,9 @@ it('should be able to parse directory flag with value provided to /usr/local/bin
 
   expect(result).toEqual({ directory: '/usr/local/bin' })
 })
+
+it('should be able to parse multiple args when each args with value provided', () => {
+  const result = new CommandLine('-l -p 8000').parse()
+
+  expect(result).toEqual({ log: true, port: 8000 })
+})

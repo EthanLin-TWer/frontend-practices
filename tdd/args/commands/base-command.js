@@ -1,7 +1,7 @@
 export class Command {
   constructor(flag) {
-    const [, value = this.defaultValue] = flag.split(' ')
-    this.value = value
+    const [, value] = flag.split(' ')
+    this.value = value || this.defaultValue
   }
 
   get defaultValue() {
