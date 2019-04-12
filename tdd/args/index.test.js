@@ -18,7 +18,7 @@ it('should be able to parse port flag with value of number 8000', () => {
   expect(result).toEqual({ port: 8000 })
 })
 
-it.skip('should be able to parse directory flag with value provided to /usr/local/bin', () => {
+it('should be able to parse directory flag with value provided to /usr/local/bin', () => {
   const result = new CommandLine('-d /usr/local/bin').parse()
 
   expect(result).toEqual({ directory: '/usr/local/bin' })

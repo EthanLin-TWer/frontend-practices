@@ -1,3 +1,4 @@
+import { DirectoryCommand } from './commands/directory-command'
 import { LogCommand } from './commands/log-command'
 import { PortCommand } from './commands/port-command'
 
@@ -15,6 +16,9 @@ export class CommandLine {
     }
     if (alias === 'p') {
       return new PortCommand(flag).parse()
+    }
+    if (alias === 'd') {
+      return new DirectoryCommand(flag).parse()
     }
 
     return {}
