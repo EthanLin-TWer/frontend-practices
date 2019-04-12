@@ -1,9 +1,10 @@
-const flagNames = {
-  l: 'log',
-  p: 'port',
-}
+const flags = [
+  { alias: 'l', name: 'log', defaultValue: true },
+  { alias: 'p', name: 'port', defaultValue: 8080 },
+]
 
 const defaultValues = {
+  l: true,
   p: 8080,
 }
 export class CommandLine {
@@ -11,8 +12,14 @@ export class CommandLine {
     this.commands = commands
   }
 
+  getFlagName(alias) {
+    return flags.find((flag) => flag.alias === alias).name
+  }
+
   parse() {
     const [, flag] = this.commands.split('-')
-    return { [flagNames[flag]]: defaultValues[flag] || true }
+    return {
+      [this.getFlagName(flag)]: defaultValues[flag],
+    }
   }
 }
