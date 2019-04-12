@@ -1,13 +1,13 @@
 import { Command } from './base-command'
 
-export class LogCommand extends Command {
+export class LoggingCommand extends Command {
   constructor(value) {
     super(value)
   }
 
   parse() {
     return {
-      log: this.value,
+      logging: this.value,
     }
   }
 

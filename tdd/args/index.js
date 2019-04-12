@@ -1,14 +1,13 @@
 import { DirectoryCommand } from './commands/directory-command'
-import { LogCommand } from './commands/log-command'
+import { LoggingCommand } from './commands/logging-command'
 import { NoopCommand } from './commands/noop-command'
 import { PortCommand } from './commands/port-command'
 
 function createCommand(command) {
   const [alias, value] = command.split(' ')
-
   switch (alias) {
     case 'l':
-      return new LogCommand(value)
+      return new LoggingCommand(value)
     case 'd':
       return new DirectoryCommand(value)
     case 'p':
