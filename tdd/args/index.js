@@ -2,10 +2,12 @@ const flagNames = {
   l: 'log',
 }
 export class CommandLine {
-  constructor() {}
+  constructor(commands) {
+    this.commands = commands
+  }
 
-  parse(string) {
-    const [, flag] = string.split('-')
+  parse() {
+    const [, flag] = this.commands.split('-')
     return { [flagNames[flag]]: true }
   }
 }
