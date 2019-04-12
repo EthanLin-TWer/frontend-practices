@@ -27,6 +27,9 @@
     "testMatch": [
       "<rootDir>/**/*.test.js"
     ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.js"
+    ],
     "verbose": false,
     "collectCoverage": false
   },
