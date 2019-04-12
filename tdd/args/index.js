@@ -1,6 +1,6 @@
-import { Command } from './commands/base-command'
 import { DirectoryCommand } from './commands/directory-command'
 import { LogCommand } from './commands/log-command'
+import { NoopCommand } from './commands/noop-command'
 import { PortCommand } from './commands/port-command'
 
 function createCommand(command) {
@@ -14,7 +14,7 @@ function createCommand(command) {
     case 'p':
       return new PortCommand(value)
     default:
-      return new Command(value)
+      return new NoopCommand(value, alias)
   }
 }
 

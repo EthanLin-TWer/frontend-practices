@@ -9,5 +9,5 @@
 - [x] should be able to parse multiple flags, each with values
 - [x] should be able to parse multiple flags - one with value and one without 20:13:05
 - [x] should be able to parse multiple flags - both without values 20:15:30
+- [x] args not recognized? 20:20:58 20:25:22
 - [ ] different value types?
-- [ ] args not recognized?

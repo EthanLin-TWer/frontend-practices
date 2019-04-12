@@ -41,3 +41,9 @@ it('should be able to parse two args when both of them have value provided', () 
 
   expect(result).toEqual({ port: 9000, directory: '/usr/bin/' })
 })
+
+it('should ignore un-recognized arguments', () => {
+  const result = new CommandLine('-w').parse()
+
+  expect(result).toEqual({})
+})
