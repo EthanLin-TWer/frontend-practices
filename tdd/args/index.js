@@ -3,16 +3,18 @@ import { DirectoryCommand } from './commands/directory-command'
 import { LogCommand } from './commands/log-command'
 import { PortCommand } from './commands/port-command'
 
-function createCommand(alias, flag) {
+function createCommand(command) {
+  const [alias, value] = command.split(' ')
+
   switch (alias) {
     case 'l':
-      return new LogCommand(flag)
+      return new LogCommand(value)
     case 'd':
-      return new DirectoryCommand(flag)
+      return new DirectoryCommand(value)
     case 'p':
-      return new PortCommand(flag)
+      return new PortCommand(value)
     default:
-      return new Command(flag)
+      return new Command(value)
   }
 }
 
@@ -24,10 +26,7 @@ export class CommandLine {
   parse() {
     const [, ...commands] = this.commands.split('-')
     return commands
-      .map((command) => {
-        const [alias] = command.split(' ')
-        return createCommand(alias, command).parse()
-      })
+      .map((command) => createCommand(command).parse())
       .reduce((a, b) => ({ ...a, ...b }), {})
   }
 }

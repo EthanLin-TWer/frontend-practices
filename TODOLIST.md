@@ -6,6 +6,8 @@
   - [x] value can be a number 19:54:28 20:02:23
   - [x] value can be a string 20:04:05
   - [x] value can be a boolean 20:06:56
-- should be able to parse multiple flags, each with values 
+- [x] should be able to parse multiple flags, each with values
 - [x] should be able to parse multiple flags - one with value and one without 20:13:05
-- should be able to parse multiple flags - both without values
+- [x] should be able to parse multiple flags - both without values 20:15:30
+- [ ] different value types?
+- [ ] args not recognized?

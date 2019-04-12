@@ -1,8 +1,8 @@
 import { Command } from './base-command'
 
 export class DirectoryCommand extends Command {
-  constructor(args) {
-    super(args)
+  constructor(value) {
+    super(value)
   }
 
   parse() {
