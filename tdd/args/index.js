@@ -1,5 +1,10 @@
 const flagNames = {
   l: 'log',
+  p: 'port',
+}
+
+const defaultValues = {
+  p: 8080,
 }
 export class CommandLine {
   constructor(commands) {
@@ -8,6 +13,6 @@ export class CommandLine {
 
   parse() {
     const [, flag] = this.commands.split('-')
-    return { [flagNames[flag]]: true }
+    return { [flagNames[flag]]: defaultValues[flag] || true }
   }
 }
