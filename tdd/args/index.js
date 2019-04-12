@@ -18,8 +18,9 @@ export class CommandLine {
 
   parse() {
     const [, flag] = this.commands.split('-')
+    const [alias, value] = flag.split(' ')
     return {
-      [this.getFlagName(flag)]: this.getDefaultValue(flag),
+      [this.getFlagName(alias)]: Number(value) || this.getDefaultValue(alias),
     }
   }
 }
