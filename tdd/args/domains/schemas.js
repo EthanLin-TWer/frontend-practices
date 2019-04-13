@@ -5,9 +5,9 @@ export class Schemas {
     this.value = schemas.map((schema) => new Schema(schema))
   }
 
-  findSchema(flag) {
+  findSchema(flagName) {
     return this.value.find((schema) => {
-      return schema.getAlias() === flag.getName()
+      return schema.getAlias() === flagName
     })
   }
 }

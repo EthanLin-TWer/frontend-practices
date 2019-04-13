@@ -8,10 +8,9 @@ export class ArgsParser {
 
   parse(command) {
     const [, ...flags] = command.split('-')
-    const args = new Flags(flags)
+    const args = new Flags(flags, this.schemas)
     return this.schemas.value
       .map((schema) => {
-        // this.schemas.findSchema()
         const flag = args.findFlag(schema.getAlias())
         // TODO: [Linesh][2019-04-13] hard-coded boolean case here
         const value = flag ? true : schema.getDefaultValue()

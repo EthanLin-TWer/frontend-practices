@@ -9,6 +9,10 @@ export class Schema {
     return this._alias
   }
 
+  getType() {
+    return this._type
+  }
+
   getDefaultValue() {
     return this._defaultValue
   }

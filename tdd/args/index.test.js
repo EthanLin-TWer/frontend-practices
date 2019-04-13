@@ -1,7 +1,7 @@
 import { ArgsParser } from './index'
 
 it('should parse command with one flag when flag does not have a value provided(should use default value)', () => {
-  const schema = [{ alias: 'l', type: Boolean, defaultValue: false }]
+  const schema = [{ alias: 'l', type: 'boolean', defaultValue: false }]
 
   const result = new ArgsParser(schema).parse('')
 
@@ -9,7 +9,7 @@ it('should parse command with one flag when flag does not have a value provided(
 })
 
 it('should parse command with one flag when flag value is provided', () => {
-  const schema = [{ alias: 'l', type: Boolean, defaultValue: false }]
+  const schema = [{ alias: 'l', type: 'boolean', defaultValue: false }]
 
   const result = new ArgsParser(schema).parse('-l')
 
@@ -18,8 +18,8 @@ it('should parse command with one flag when flag value is provided', () => {
 
 it('should parse command with two flags with both of them boolean arguments', () => {
   const schema = [
-    { alias: 'l', type: Boolean, defaultValue: false },
-    { alias: 'r', type: Boolean, defaultValue: false },
+    { alias: 'l', type: 'boolean', defaultValue: false },
+    { alias: 'r', type: 'boolean', defaultValue: false },
   ]
 
   const result = new ArgsParser(schema).parse('-l -r')
