@@ -27,3 +27,11 @@ it('should parse command with two flags with both of them boolean arguments', ()
   expect(result.l).toEqual(true)
   expect(result.r).toEqual(true)
 })
+
+it('should parse command with integer', () => {
+  const schema = [{ alias: 'p', type: 'integer', defaultValue: 8080 }]
+
+  const result = new ArgsParser(schema).parse('-p')
+
+  expect(result.p).toEqual(8080)
+})

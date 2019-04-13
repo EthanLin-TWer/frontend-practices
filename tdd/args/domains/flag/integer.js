@@ -1,7 +1,7 @@
 import { Flag } from './index'
 
-export class BooleanFlag extends Flag {
+export class IntegerFlag extends Flag {
   constructor(name, value, defaultValue) {
-    super(name, true, defaultValue)
+    super(name, value, defaultValue)
   }
 }

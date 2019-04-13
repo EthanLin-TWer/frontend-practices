@@ -12,10 +12,10 @@ export class ArgsParser {
     return this.schemas.value
       .map((schema) => {
         const flag = args.findFlag(schema.getAlias())
-        // TODO: [Linesh][2019-04-13] hard-coded boolean case here
-        const value = flag ? true : schema.getDefaultValue()
         return {
-          [schema.getAlias()]: value,
+          [schema.getAlias()]: flag
+            ? flag.getValue()
+            : schema.getDefaultValue(),
         }
       })
       .reduce((a, b) => ({ ...a, ...b }), {})
