@@ -3,14 +3,10 @@ export class ArgsParser {
     this.schema = schema
   }
 
-  getDefaultValue(alias) {
-    return this.schema.find((flag) => flag.alias === alias).defaultValue
-  }
-
   parse(command) {
     const [, flag = ''] = command.split('-')
-    const alias = this.schema[0].alias
+    const { alias, defaultValue } = this.schema[0]
     const [l] = flag.split(' ')
-    return { [alias]: l ? true : this.getDefaultValue(alias) }
+    return { [alias]: l ? true : defaultValue }
   }
 }
