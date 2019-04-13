@@ -3,7 +3,13 @@ export class ArgsParser {
     this.schema = schema
   }
 
+  getDefaultValue(alias) {
+    return this.schema.find((flag) => flag.alias === alias).defaultValue
+  }
+
   parse() {
-    return { l: false }
+    // const [,] = command.split('-')
+    const alias = this.schema[0].alias
+    return { [alias]: this.getDefaultValue(alias) }
   }
 }
