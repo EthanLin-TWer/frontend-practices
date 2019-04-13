@@ -1,7 +1,10 @@
 export class Flag {
-  constructor(flag) {
-    const [name, value] = flag.split(' ')
-    this.name = name
+  constructor(name, value) {
+    this._name = name
     this.value = value
+  }
+
+  getName() {
+    return this._name
   }
 }

@@ -1,18 +1,21 @@
 import { Flag } from './domains/flag'
-import { Schema } from './domains/schema'
+import { Schemas } from './domains/schemas'
 
 export class ArgsParser {
   constructor(schemas) {
-    this.schemas = schemas.map((schema) => new Schema(schema))
+    this.schemas = new Schemas(schemas)
   }
 
   parse(command) {
     const [, ...flags] = command.split('-')
-    const args = flags.map((flag) => new Flag(flag))
-    return this.schemas
+    const args = flags.map((flag) => {
+      const [name, value] = flag.split(' ')
+      return new Flag(name, value)
+    })
+    return this.schemas.value
       .map((schema) => ({
         [schema.getAlias()]:
-          args.some((flag) => flag.name === schema.getAlias()) ||
+          args.some((flag) => flag.getName() === schema.getAlias()) ||
           schema.getDefaultValue(),
       }))
       .reduce((a, b) => ({ ...a, ...b }), {})
