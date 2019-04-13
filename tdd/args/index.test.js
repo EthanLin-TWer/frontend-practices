@@ -15,3 +15,15 @@ it('should parse command with one flag when flag value is provided', () => {
 
   expect(result.l).toEqual(true)
 })
+
+it('should parse command with two flags with both of them boolean arguments', () => {
+  const schema = [
+    { alias: 'l', type: Boolean, defaultValue: false },
+    { alias: 'r', type: Boolean, defaultValue: false },
+  ]
+
+  const result = new ArgsParser(schema).parse('-l -r')
+
+  expect(result.l).toEqual(true)
+  expect(result.r).toEqual(true)
+})
