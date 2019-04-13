@@ -1,6 +1,7 @@
 export class Flag {
-  constructor(alias, value) {
-    this.alias = alias
+  constructor(flag) {
+    const [name, value] = flag.split(' ')
+    this.name = name
     this.value = value
   }
 }

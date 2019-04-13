@@ -4,7 +4,7 @@
 - [ ] should be able to build a schema with alias, types and default values
 - [ ] should be able to parse an argument
   - [x] args with one flag, and without value - use default value 18:32:13 18:37:58
-  - [ ] args with one flag and a value - use the passed value 18:37:58 18:44:10
+  - [x] args with one flag and a value - use the passed value 18:37:58 18:44:10 18:59:06
   - [ ] arg values should be the specified type in the schema
     - [ ] numbers
     - [ ] booleans

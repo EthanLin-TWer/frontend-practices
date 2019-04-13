@@ -1,3 +1,5 @@
+import { Flag } from './domains/flag'
+
 export class ArgsParser {
   constructor(schema) {
     this.schema = schema
@@ -5,13 +7,10 @@ export class ArgsParser {
 
   parse(command) {
     const [, ...flags] = command.split('-')
-    const existence = flags.map((flag) => {
-      const [name, value] = flag.split(' ')
-      return { name, value }
-    })
+    const args = flags.map((flag) => new Flag(flag))
     return this.schema
       .map(({ alias, defaultValue }) => ({
-        [alias]: existence.some((flag) => flag.name === alias) || defaultValue,
+        [alias]: args.some((flag) => flag.name === alias) || defaultValue,
       }))
       .reduce((a, b) => ({ ...a, ...b }), {})
   }
