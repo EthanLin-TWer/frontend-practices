@@ -17,13 +17,6 @@ function createCommand(command) {
   }
 }
 
-function toObject(array) {
-  return array.reduce(
-    (result, keyValuePair) => ({ ...result, ...keyValuePair }),
-    {}
-  )
-}
-
 export class CommandLine {
   constructor(commands) {
     this.commands = commands
@@ -33,4 +26,11 @@ export class CommandLine {
     const [, ...commands] = this.commands.split('-')
     return toObject(commands.map((command) => createCommand(command).parse()))
   }
+}
+
+function toObject(array) {
+  return array.reduce(
+    (result, keyValuePair) => ({ ...result, ...keyValuePair }),
+    {}
+  )
 }
