@@ -11,12 +11,10 @@ export class ArgsParser {
     const args = new Flags(flags, this.schemas)
     return this.schemas.value
       .map((schema) => {
-        const flag = args.findFlag(schema.getAlias())
-        return {
-          [schema.getAlias()]: flag
-            ? flag.getValue()
-            : schema.getDefaultValue(),
-        }
+        const flagFound = args.findFlag(schema.getAlias())
+        const value = flagFound.getValue() || schema.getDefaultValue()
+
+        return { [schema.getAlias()]: value }
       })
       .reduce((a, b) => ({ ...a, ...b }), {})
   }

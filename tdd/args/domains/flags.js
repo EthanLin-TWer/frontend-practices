@@ -1,5 +1,6 @@
 import { BooleanFlag } from './flag/boolean'
 import { IntegerFlag } from './flag/integer'
+import { NullFlag } from './flag/null'
 import { StringFlag } from './flag/string'
 
 function createFlagFactory(flag, schemas) {
@@ -24,6 +25,8 @@ export class Flags {
   }
 
   findFlag(alias) {
-    return this._value.find((flag) => flag.getName() === alias)
+    return (
+      this._value.find((flag) => flag.getName() === alias) || new NullFlag()
+    )
   }
 }

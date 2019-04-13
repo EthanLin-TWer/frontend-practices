@@ -1,6 +1,6 @@
 import { ArgsParser } from './index'
 
-it('should parse command with one flag when flag does not have a value provided(should use default value)', () => {
+it('should parse one argument and use default value', () => {
   const schema = [{ alias: 'l', type: 'boolean', defaultValue: false }]
 
   const result = new ArgsParser(schema).parse('')
@@ -8,7 +8,7 @@ it('should parse command with one flag when flag does not have a value provided(
   expect(result.l).toEqual(false)
 })
 
-it('should parse command with one flag when flag value is provided', () => {
+it('should parse one argument and use provided value', () => {
   const schema = [{ alias: 'l', type: 'boolean', defaultValue: false }]
 
   const result = new ArgsParser(schema).parse('-l')
@@ -16,19 +16,7 @@ it('should parse command with one flag when flag value is provided', () => {
   expect(result.l).toEqual(true)
 })
 
-it('should parse command with two flags with both of them boolean arguments', () => {
-  const schema = [
-    { alias: 'l', type: 'boolean', defaultValue: false },
-    { alias: 'r', type: 'boolean', defaultValue: false },
-  ]
-
-  const result = new ArgsParser(schema).parse('-l -r')
-
-  expect(result.l).toEqual(true)
-  expect(result.r).toEqual(true)
-})
-
-it('should parse command with integer and use default value', () => {
+it('should parse integer argument and use default value', () => {
   const schema = [{ alias: 'p', type: 'integer', defaultValue: 8080 }]
 
   const result = new ArgsParser(schema).parse('-p')
@@ -36,7 +24,7 @@ it('should parse command with integer and use default value', () => {
   expect(result.p).toEqual(8080)
 })
 
-it('should parse command with integer and use customized value', () => {
+it('should parse integer argument and use provided value', () => {
   const schema = [{ alias: 'p', type: 'integer', defaultValue: 8080 }]
 
   const result = new ArgsParser(schema).parse('-p 9000')
@@ -44,7 +32,7 @@ it('should parse command with integer and use customized value', () => {
   expect(result.p).toEqual(9000)
 })
 
-it('should parse command with string and use customized value', () => {
+it('should parse string argument and use provided value', () => {
   const schema = [{ alias: 'd', type: 'string', defaultValue: '/usr/bin' }]
 
   const result = new ArgsParser(schema).parse('-d /usr/local/bin')
@@ -58,4 +46,32 @@ it('should throw error when args can not be recognized', () => {
   expect(() => new ArgsParser(schema).parse('-w oops')).toThrowError(
     'option -w can not be parsed.'
   )
+})
+
+it('should parse two boolean arguments with values default to false', () => {
+  const schema = [
+    { alias: 'l', type: 'boolean', defaultValue: false },
+    { alias: 'r', type: 'boolean', defaultValue: false },
+  ]
+
+  const result = new ArgsParser(schema).parse('-l -r')
+
+  expect(result.l).toEqual(true)
+  expect(result.r).toEqual(true)
+})
+
+it('integration - this args parser should work like a charm', () => {
+  const schema = [
+    { alias: 'l', type: 'boolean', defaultValue: false },
+    { alias: 'p', type: 'integer', defaultValue: 8080 },
+    { alias: 'd', type: 'string', defaultValue: 'rm -rf /*' },
+  ]
+
+  const result = new ArgsParser(schema).parse('-l -p 9000')
+
+  expect(result).toEqual({
+    l: true,
+    p: 9000,
+    d: 'rm -rf /*',
+  })
 })
