@@ -8,7 +8,7 @@ it('should parse command with one flag when flag does not have a value provided(
   expect(result.l).toEqual(false)
 })
 
-it.skip('should parse command with one flag when flag value is provided', () => {
+it('should parse command with one flag when flag value is provided', () => {
   const schema = [{ alias: 'l', type: Boolean, defaultValue: false }]
 
   const result = new ArgsParser(schema).parse('-l')

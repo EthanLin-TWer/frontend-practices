@@ -7,9 +7,10 @@ export class ArgsParser {
     return this.schema.find((flag) => flag.alias === alias).defaultValue
   }
 
-  parse() {
-    // const [,] = command.split('-')
+  parse(command) {
+    const [, flag = ''] = command.split('-')
     const alias = this.schema[0].alias
-    return { [alias]: this.getDefaultValue(alias) }
+    const [l] = flag.split(' ')
+    return { [alias]: l ? true : this.getDefaultValue(alias) }
   }
 }
