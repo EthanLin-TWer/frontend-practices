@@ -51,3 +51,11 @@ it('should parse command with string and use customized value', () => {
 
   expect(result.d).toEqual('/usr/local/bin')
 })
+
+it('should throw error when args can not be recognized', () => {
+  const schema = [{ alias: 'd', type: 'string', defaultValue: '/usr/bin' }]
+
+  expect(() => new ArgsParser(schema).parse('-w oops')).toThrowError(
+    'option -w can not be parsed.'
+  )
+})

@@ -9,6 +9,6 @@
     - [x] numbers
     - [x] booleans
     - [x] strings
-- [ ] should be able to parse multiple args
+- [x] should be able to parse multiple args
 - [ ] should throw an error indicating what goes wrong nicely
 - [ ] should be able to recognize negative values

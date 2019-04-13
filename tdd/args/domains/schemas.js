@@ -1,4 +1,5 @@
 import { Schema } from './schema'
+import { NullSchema } from './schema/empty'
 
 export class Schemas {
   constructor(schemas) {
@@ -6,8 +7,10 @@ export class Schemas {
   }
 
   findSchema(flagName) {
-    return this.value.find((schema) => {
-      return schema.getAlias() === flagName
-    })
+    return (
+      this.value.find((schema) => {
+        return schema.getAlias() === flagName
+      }) || new NullSchema()
+    )
   }
 }
