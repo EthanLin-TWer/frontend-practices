@@ -11,9 +11,9 @@ export class ArgsParser {
     const args = flags.map((flag) => new Flag(flag))
     return this.schemas
       .map((schema) => ({
-        [schema.alias]:
-          args.some((flag) => flag.name === schema.alias) ||
-          schema.defaultValue,
+        [schema.getAlias()]:
+          args.some((flag) => flag.name === schema.getAlias()) ||
+          schema.getDefaultValue(),
       }))
       .reduce((a, b) => ({ ...a, ...b }), {})
   }
