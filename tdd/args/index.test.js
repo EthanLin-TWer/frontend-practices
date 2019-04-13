@@ -43,3 +43,11 @@ it('should parse command with integer and use customized value', () => {
 
   expect(result.p).toEqual(9000)
 })
+
+it('should parse command with string and use customized value', () => {
+  const schema = [{ alias: 'd', type: 'string', defaultValue: '/usr/bin' }]
+
+  const result = new ArgsParser(schema).parse('-d /usr/local/bin')
+
+  expect(result.d).toEqual('/usr/local/bin')
+})
