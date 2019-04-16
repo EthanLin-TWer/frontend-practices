@@ -5,6 +5,10 @@ export class Flag {
     this.defaultValue = defaultValue
   }
 
+  getName() {
+    return this.name
+  }
+
   getType() {
     return this.type
   }

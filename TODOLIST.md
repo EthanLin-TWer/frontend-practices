@@ -12,7 +12,7 @@
   - [x] should support multiple flags parsing 01:17:36 01:26:56
 - [ ] should parse argument list
   - [x] - reorganize directory 01:46:49
-  * [ ] (arg parser) ask (schema) for the default value 01:50:32
+  * [x] (arg parser) ask (schema) for the default value 01:50:32 01:54:49
   * [ ] should use value passed
   * [ ] negative number
   * [ ] not supported value of type?

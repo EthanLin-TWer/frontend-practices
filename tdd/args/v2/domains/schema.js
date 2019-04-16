@@ -13,4 +13,9 @@ export class Schema {
       return createFlagsFactory(name, type, defaultValue)
     })
   }
+
+  // TODO: [Linesh][2019-04-17] add test
+  findFlag(name) {
+    return this.getFlags().find((flag) => flag.getName() === name)
+  }
 }
