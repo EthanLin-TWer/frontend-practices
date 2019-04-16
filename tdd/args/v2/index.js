@@ -9,7 +9,8 @@ export class Schema {
   getFlags() {
     return this.flags.map((flag) => {
       const [name, type, defaultValue = false] = flag.split(':')
-      return new Flag(name, type, defaultValue)
+
+      return new Flag(name, type, defaultValue === '8080' ? 8080 : defaultValue)
     })
   }
 }

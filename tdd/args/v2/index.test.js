@@ -31,4 +31,12 @@ describe('Schema', () => {
     expect(directoryFlag.getType()).toEqual('string')
     expect(directoryFlag.getDefaultValue()).toEqual('/usr/bin')
   })
+
+  it('should parse number typed default value of a flag', () => {
+    const schema = new Schema('p:number:8080')
+    const [portFlag] = schema.getFlags()
+
+    expect(portFlag.getType()).toEqual('number')
+    expect(portFlag.getDefaultValue()).toEqual(8080)
+  })
 })
