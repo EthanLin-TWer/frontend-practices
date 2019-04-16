@@ -39,4 +39,12 @@ describe('Schema', () => {
     expect(portFlag.getType()).toEqual('number')
     expect(portFlag.getDefaultValue()).toEqual(8080)
   })
+
+  it('should parse string array typed default value of a flag', () => {
+    const schema = new Schema('g:[string]:this,is,a,list')
+    const [gFlag] = schema.getFlags()
+
+    expect(gFlag.getType()).toEqual('[string]')
+    expect(gFlag.getDefaultValue()).toEqual(['this', 'is', 'a', 'list'])
+  })
 })
