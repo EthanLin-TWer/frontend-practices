@@ -27,7 +27,7 @@ export function createArgsFactory(name, type, value) {
     case 'number':
       return new Argument(name, Number(value))
     case 'boolean':
-      return new Argument(name, !!value)
+      return new Argument(name, true)
     case 'string':
       return new Argument(name, value)
     case '[string]':

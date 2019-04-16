@@ -30,4 +30,15 @@ describe('ArgsParser', () => {
     expect(args[0].getValue()).toEqual(false)
     expect(args[1].getValue()).toEqual(8000)
   })
+
+  it('should parse multiple argument and use passed value when value is present', () => {
+    const schema = new Schema('l:boolean p:number:8080 d:string:/usr/bin')
+    const parser = new ArgsParser(schema)
+
+    const args = parser.parse('-p 8000 -l -d /usr/local/bin')
+
+    expect(args[0].getValue()).toEqual(true)
+    expect(args[1].getValue()).toEqual(8000)
+    expect(args[2].getValue()).toEqual('/usr/local/bin')
+  })
 })

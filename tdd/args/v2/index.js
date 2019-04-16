@@ -1,5 +1,5 @@
 import { Argument } from './domains/arg'
-import { createArgsFactory } from './domains/factory'
+import { Args } from './domains/args'
 
 export class ArgsParser {
   constructor(schema) {
@@ -7,20 +7,11 @@ export class ArgsParser {
   }
 
   parse(argumentList) {
-    const [, ...args] = argumentList.split('-')
-    const argsObject = args.map((arg) => {
-      const [name, value] = arg.split(' ')
-      const type = this.schema.findFlag(name).getType()
-
-      return createArgsFactory(name, type, value)
-    })
+    const [, ...rest] = argumentList.split('-')
+    const args = new Args(rest, this.schema)
 
     return this.schema.getFlags().map((flag) => {
-      // TODO: [Linesh][2019-04-17] null object
-      const arg =
-        argsObject.find((one) => one.getName() === flag.getName()) ||
-        new Argument('', null)
-
+      const arg = args.findArg(flag.getName())
       return new Argument(
         flag.getName(),
         arg.getValue() || flag.getDefaultValue()
