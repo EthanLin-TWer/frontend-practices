@@ -1,13 +1,15 @@
 import { Flag } from './domains/flag'
 
 export class Schema {
-  constructor() {}
+  constructor(schema) {
+    this.schema = schema
+  }
 
   getFlags() {
-    return [
-      new Flag('l', 'boolean', false),
-      new Flag('p', 'number', 0),
-      new Flag('d', 'string', ''),
-    ]
+    const flags = this.schema.split(' ')
+    return flags.map((flag) => {
+      const [name, type, defaultValue = false] = flag.split(':')
+      return new Flag(name, type, defaultValue)
+    })
   }
 }
