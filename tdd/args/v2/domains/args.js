@@ -1,5 +1,5 @@
-import { Argument } from './arg'
 import { createArgsFactory } from './factory'
+import { NullArgument } from './null-arg'
 
 export class Args {
   constructor(args, schema) {
@@ -17,10 +17,7 @@ export class Args {
   }
 
   findArg(name) {
-    // TODO: [Linesh][2019-04-17] null object
-    return (
-      this.args.find((arg) => arg.getName() === name) || new Argument('', null)
-    )
+    return this.args.find((arg) => arg.getName() === name) || new NullArgument()
   }
 
   getValue() {

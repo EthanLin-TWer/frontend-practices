@@ -15,8 +15,8 @@
   * [x] (arg parser) ask (schema) for one default value 01:50:32 01:54:49 02:01:51
   * [x] (arg parser) ask (schema) for multiple default value 02:01:51 02:04:30
   * [x] should use one value passed 02:04:30 02:12:01
-  * [x] + should use multiple value passed 02:04:30 02:12:01 02:29:35 02:36:40
-  * [ ] nice error message when out argument not found in schema 02:40:06
+  * [x] - should use multiple value passed 02:04:30 02:12:01 02:29:35 02:36:40
+  * [x] nice error message when out argument not found in schema 02:40:06
   * [ ] negative number
   * [ ] not supported value of type?
   * [ ] order not necessary match the schema order
