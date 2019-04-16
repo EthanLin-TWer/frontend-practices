@@ -4,8 +4,8 @@
 - [ ] schema
   - [x] should flag has types 01:09:44 01:13:16
     - [x] string default value 01:26:56 01:30:03
-    - integer number 01:30:10 01:33:34
-    - boolean
+    - [x] integer number 01:30:10 01:33:34 01:37:42
+    - [x] boolean 01:38:11 01:38:59
     - list of string
     - list of integer
   - should flag has default value

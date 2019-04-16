@@ -8,7 +8,7 @@ export class Schema {
 
   getFlags() {
     return this.flags.map((flag) => {
-      const [name, type, defaultValue = false] = flag.split(':')
+      const [name, type, defaultValue] = flag.split(':')
 
       return createFlagsFactory(name, type, defaultValue)
     })
