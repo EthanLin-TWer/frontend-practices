@@ -9,13 +9,21 @@ export class ArgsParser {
   parse(command) {
     const [, ...flags] = command.split('-')
     const args = new Flags(flags, this.schemas)
-    return this.schemas.value
-      .map((schema) => {
-        const flagFound = args.findFlag(schema.getAlias())
-        const value = flagFound.getValue() || schema.getDefaultValue()
+
+    return toObject(
+      this.schemas.value.map((schema) => {
+        const flag = args.findFlag(schema.getAlias())
+        const value = flag.getValue() || schema.getDefaultValue()
 
         return { [schema.getAlias()]: value }
       })
-      .reduce((a, b) => ({ ...a, ...b }), {})
+    )
   }
+}
+
+function toObject(array) {
+  return array.reduce(
+    (result, keyValuePair) => ({ ...result, ...keyValuePair }),
+    {}
+  )
 }
