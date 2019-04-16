@@ -14,4 +14,13 @@ describe('Schema', () => {
     expect(first.getType()).toEqual('boolean')
     expect(first.getDefaultValue()).toEqual(false)
   })
+
+  it('should be able to parse multiple flags', () => {
+    const schema = new Schema('l:boolean p:number d:string')
+    const [first, second, third] = schema.getFlags()
+
+    expect(first.getType()).toEqual('boolean')
+    expect(second.getType()).toEqual('number')
+    expect(third.getType()).toEqual('string')
+  })
 })

@@ -10,7 +10,7 @@
     * list of string
     * list of integer
   * should flag has default value
-  * [x] should support multiple flags parsing 01:17:36 
+  * [x] should support multiple flags parsing 01:17:36 01:21:12
 * [ ] should parse argument list 
   * [ ] (arg parser) ask (schema) for the default value
   * [ ] should use value passed
