@@ -1,14 +1,19 @@
 # TODOLIST
 
-- [x] tasking: 18:22:26 18:28:48
-- [x] should be able to build a schema with alias, types and default values
-- [x] should be able to parse an argument
-  - [x] args with one flag, and without value - use default value 18:32:13 18:37:58
-  - [x] args with one flag and a value - use the passed value 18:37:58 18:44:10 18:59:06
-  - [x] arg values should be the specified type in the schema
-    - [x] numbers
-    - [x] booleans
-    - [x] strings
-- [x] should be able to parse multiple args
-- [ ] should throw an error indicating what goes wrong nicely
-- [ ] should be able to recognize negative values
+* [x] tasking 01:03:24 01:09:44 
+* [ ] schema 
+  * should flag has types 
+    * string
+    * integer number
+      * [ ] negative number
+    * boolean 
+    * list of string
+    * list of integer
+  * should flag has default value
+  * should support multiple flags parsing 
+* [ ] should parse argument list 
+  * [ ] (arg parser) ask (schema) for the default value
+  * [ ] should use value passed
+  * [ ] not supported value of type? 
+  * [ ] nice error message when out argument not found in schema
+  * [ ] order not necessary match the schema order 
