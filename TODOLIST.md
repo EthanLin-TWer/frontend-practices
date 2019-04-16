@@ -2,7 +2,7 @@
 
 * [x] tasking 01:03:24 01:09:44 
 * [ ] schema 
-  * should flag has types 01:09:44 01:13:16 
+  * [x] should flag has types 01:09:44 01:13:16 
     * string
     * integer number
       * [ ] negative number
@@ -10,7 +10,7 @@
     * list of string
     * list of integer
   * should flag has default value
-  * should support multiple flags parsing 
+  * [x] should support multiple flags parsing 01:17:36 
 * [ ] should parse argument list 
   * [ ] (arg parser) ask (schema) for the default value
   * [ ] should use value passed
