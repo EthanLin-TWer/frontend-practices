@@ -7,10 +7,11 @@ describe('Schema', () => {
     expect(schema.getFlags().length).toEqual(3)
   })
 
-  it('should parse types of an flag', () => {
+  it('should parse type and name of an flag', () => {
     const schema = new Schema('l:boolean')
+    const [first] = schema.getFlags()
 
-    expect(schema.getType()).toEqual('boolean')
-    expect(schema.getDefaultValue()).toEqual(false)
+    expect(first.getType()).toEqual('boolean')
+    expect(first.getDefaultValue()).toEqual(false)
   })
 })
