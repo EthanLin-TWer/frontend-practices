@@ -23,4 +23,12 @@ describe('Schema', () => {
     expect(second.getType()).toEqual('number')
     expect(third.getType()).toEqual('string')
   })
+
+  it('should parse string typed default value of a flag', () => {
+    const schema = new Schema('d:string:/usr/bin')
+    const [directoryFlag] = schema.getFlags()
+
+    expect(directoryFlag.getType()).toEqual('string')
+    expect(directoryFlag.getDefaultValue()).toEqual('/usr/bin')
+  })
 })
