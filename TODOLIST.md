@@ -12,8 +12,9 @@
   - [x] should support multiple flags parsing 01:17:36 01:26:56
 - [ ] should parse argument list
   - [x] - reorganize directory 01:46:49
-  * [x] (arg parser) ask (schema) for the default value 01:50:32 01:54:49
-  * [ ] should use value passed
+  * [x] (arg parser) ask (schema) for one default value 01:50:32 01:54:49 02:01:51
+  * [x] (arg parser) ask (schema) for multiple default value 02:01:51 02:04:30
+  * [ ] should use one value passed 02:04:30
   * [ ] negative number
   * [ ] not supported value of type?
   * [ ] nice error message when out argument not found in schema

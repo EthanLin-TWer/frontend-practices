@@ -5,8 +5,15 @@ export class ArgsParser {
     this.schema = schema
   }
 
-  parse() {
-    const flag = this.schema.getFlags()[0]
-    return [new Argument(flag.getName(), flag.getDefaultValue())]
+  parse(argumentList) {
+    const [, args = ''] = argumentList.split('-')
+    const [name, value] = args.split(' ')
+
+    return this.schema.getFlags().map((flag) => {
+      return new Argument(
+        flag.getName(),
+        flag.getName() === name ? Number(value) : flag.getDefaultValue()
+      )
+    })
   }
 }
