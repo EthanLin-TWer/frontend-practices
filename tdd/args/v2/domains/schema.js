@@ -1,4 +1,4 @@
-import { createFlagsFactory } from './flags-factory'
+import { createFlagsFactory } from './factory'
 
 export class Schema {
   constructor(schema) {

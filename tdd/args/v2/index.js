@@ -1,4 +1,5 @@
 import { Argument } from './domains/arg'
+import { createArgsFactory } from './domains/factory'
 
 export class ArgsParser {
   constructor(schema) {
@@ -9,7 +10,9 @@ export class ArgsParser {
     const [, ...args] = argumentList.split('-')
     const argsObject = args.map((arg) => {
       const [name, value] = arg.split(' ')
-      return new Argument(name, Number(value))
+      const type = this.schema.findFlag(name).getType()
+
+      return createArgsFactory(name, type, value)
     })
 
     return this.schema.getFlags().map((flag) => {
@@ -17,6 +20,7 @@ export class ArgsParser {
       const arg =
         argsObject.find((one) => one.getName() === flag.getName()) ||
         new Argument('', null)
+
       return new Argument(
         flag.getName(),
         arg.getValue() || flag.getDefaultValue()

@@ -1,3 +1,4 @@
+import { Argument } from './arg'
 import { Flag } from './flag'
 
 export function createFlagsFactory(name, type, defaultValue) {
@@ -18,5 +19,22 @@ export function createFlagsFactory(name, type, defaultValue) {
       )
     default:
       return new Flag(name, type, defaultValue)
+  }
+}
+
+export function createArgsFactory(name, type, value) {
+  switch (type) {
+    case 'number':
+      return new Argument(name, Number(value))
+    case 'boolean':
+      return new Argument(name, !!value)
+    case 'string':
+      return new Argument(name, value)
+    case '[string]':
+      return new Argument(name, type)
+    case '[number]':
+      return new Argument(name, type)
+    default:
+      return new Argument(name, type)
   }
 }
