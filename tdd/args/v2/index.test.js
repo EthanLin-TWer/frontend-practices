@@ -41,4 +41,11 @@ describe('ArgsParser', () => {
     expect(args[1].getValue()).toEqual(8000)
     expect(args[2].getValue()).toEqual('/usr/local/bin')
   })
+
+  it('should throw error when argument list contains argument that can not be recognized by the schema', () => {
+    const schema = new Schema('l:boolean')
+    const parser = new ArgsParser(schema)
+
+    expect(() => parser.parse('-w')).toThrowError('Not recognized option: -w')
+  })
 })

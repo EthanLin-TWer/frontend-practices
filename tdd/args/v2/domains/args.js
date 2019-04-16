@@ -5,9 +5,14 @@ export class Args {
   constructor(args, schema) {
     this.args = args.map((arg) => {
       const [name, value] = arg.split(' ')
-      const type = schema.findFlag(name).getType()
+      const flag = schema.findFlag(name)
 
-      return createArgsFactory(name, type, value)
+      // TODO: [Linesh][2019-04-17] remove this check to somewhere else?
+      if (!flag) {
+        throw new Error(`Not recognized option: -${name}`)
+      }
+
+      return createArgsFactory(name, flag.getType(), value)
     })
   }
 
