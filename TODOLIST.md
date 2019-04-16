@@ -2,7 +2,7 @@
 
 * [x] tasking 01:03:24 01:09:44 
 * [ ] schema 
-  * should flag has types 
+  * should flag has types 01:09:44 01:13:16 
     * string
     * integer number
       * [ ] negative number
