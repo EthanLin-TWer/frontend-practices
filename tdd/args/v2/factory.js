@@ -1,5 +1,5 @@
-import { Argument } from './arg'
-import { Flag } from './flag'
+import { Argument } from './domains/arg'
+import { Flag } from './domains/flag'
 
 export function createFlagsFactory(name, type, defaultValue) {
   switch (type) {

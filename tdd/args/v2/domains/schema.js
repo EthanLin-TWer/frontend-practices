@@ -1,4 +1,4 @@
-import { createFlagsFactory } from './factory'
+import { createFlagsFactory } from '../factory'
 
 export class Schema {
   constructor(schema) {
@@ -14,7 +14,6 @@ export class Schema {
     })
   }
 
-  // TODO: [Linesh][2019-04-17] add test
   findFlag(name) {
     return this.getFlags().find((flag) => flag.getName() === name)
   }

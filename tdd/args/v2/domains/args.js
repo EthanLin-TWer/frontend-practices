@@ -1,4 +1,4 @@
-import { createArgsFactory } from './factory'
+import { createArgsFactory } from '../factory'
 import { NullArgument } from './null-arg'
 
 export class Args {
