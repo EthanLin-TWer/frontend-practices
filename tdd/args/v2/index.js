@@ -1,4 +1,4 @@
-import { Flag } from './domains/flag'
+import { createFlagsFactory } from './domains/flags-factory'
 
 export class Schema {
   constructor(schema) {
@@ -10,7 +10,7 @@ export class Schema {
     return this.flags.map((flag) => {
       const [name, type, defaultValue = false] = flag.split(':')
 
-      return new Flag(name, type, defaultValue === '8080' ? 8080 : defaultValue)
+      return createFlagsFactory(name, type, defaultValue)
     })
   }
 }
