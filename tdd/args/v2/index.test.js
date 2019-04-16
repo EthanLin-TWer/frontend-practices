@@ -47,4 +47,12 @@ describe('Schema', () => {
     expect(gFlag.getType()).toEqual('[string]')
     expect(gFlag.getDefaultValue()).toEqual(['this', 'is', 'a', 'list'])
   })
+
+  it('should parse number array typed default value of a flag', () => {
+    const schema = new Schema('g:[number]:1,2,3,-1')
+    const [gFlag] = schema.getFlags()
+
+    expect(gFlag.getType()).toEqual('[number]')
+    expect(gFlag.getDefaultValue()).toEqual([1, 2, 3, -1])
+  })
 })

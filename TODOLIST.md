@@ -7,7 +7,7 @@
     - [x] integer number 01:30:10 01:33:34 01:37:42
     - [x] boolean 01:38:11 01:38:59
     - [x] list of string 01:41:33
-    - list of integer
+    - [x] list of integer 01:43:38
   - should flag has default value
   - [x] should support multiple flags parsing 01:17:36 01:26:56
 - [ ] should parse argument list
