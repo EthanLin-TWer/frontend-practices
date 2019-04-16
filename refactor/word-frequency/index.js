@@ -23,7 +23,7 @@ export const getResult = (inputStr) => {
 
     const result = []
     for (const w of inputList) {
-      result.push(`${w.getValue()} ${w.getWordCount()}`)
+      result.push(`${w.getDefaultValue()} ${w.getWordCount()}`)
     }
 
     return result.join('\n')
@@ -33,12 +33,12 @@ export const getResult = (inputStr) => {
 const getListMap = (inputList) => {
   const map = {}
   for (const input of inputList) {
-    if (!map.hasOwnProperty(input.getValue())) {
+    if (!map.hasOwnProperty(input.getDefaultValue())) {
       const arr = []
       arr.push(input)
-      map[input.getValue()] = arr
+      map[input.getDefaultValue()] = arr
     } else {
-      map[input.getValue()].push(input)
+      map[input.getDefaultValue()].push(input)
     }
   }
 

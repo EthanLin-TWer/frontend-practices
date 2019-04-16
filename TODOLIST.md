@@ -10,11 +10,11 @@
     - [x] list of integer 01:43:38
   - [x] should flag has default value
   - [x] should support multiple flags parsing 01:17:36 01:26:56
-- [ ] should parse argument list 
-  * [x] + reorganize directory 01:46:49
-  - [ ] (arg parser) ask (schema) for the default value
-  - [ ] should use value passed 
-  - [ ] negative number
-  - [ ] not supported value of type?
-  - [ ] nice error message when out argument not found in schema
-  - [ ] order not necessary match the schema order
+- [ ] should parse argument list
+  - [x] - reorganize directory 01:46:49
+  * [ ] (arg parser) ask (schema) for the default value 01:50:32
+  * [ ] should use value passed
+  * [ ] negative number
+  * [ ] not supported value of type?
+  * [ ] nice error message when out argument not found in schema
+  * [ ] order not necessary match the schema order
