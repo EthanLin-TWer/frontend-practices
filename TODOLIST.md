@@ -14,7 +14,8 @@
   - [x] - reorganize directory 01:46:49
   * [x] (arg parser) ask (schema) for one default value 01:50:32 01:54:49 02:01:51
   * [x] (arg parser) ask (schema) for multiple default value 02:01:51 02:04:30
-  * [ ] should use one value passed 02:04:30
+  * [x] should use one value passed 02:04:30 02:12:01
+  * [ ] + should use multiple value passed 02:04:30 02:12:01
   * [ ] negative number
   * [ ] not supported value of type?
   * [ ] nice error message when out argument not found in schema

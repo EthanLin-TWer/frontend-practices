@@ -6,13 +6,20 @@ export class ArgsParser {
   }
 
   parse(argumentList) {
-    const [, args = ''] = argumentList.split('-')
-    const [name, value] = args.split(' ')
+    const [, ...args] = argumentList.split('-')
+    const argsObject = args.map((arg) => {
+      const [name, value] = arg.split(' ')
+      return new Argument(name, Number(value))
+    })
 
     return this.schema.getFlags().map((flag) => {
+      // TODO: [Linesh][2019-04-17] null object
+      const arg =
+        argsObject.find((one) => one.getName() === flag.getName()) ||
+        new Argument('', null)
       return new Argument(
         flag.getName(),
-        flag.getName() === name ? Number(value) : flag.getDefaultValue()
+        arg.getValue() || flag.getDefaultValue()
       )
     })
   }
