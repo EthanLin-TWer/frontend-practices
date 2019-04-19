@@ -13,7 +13,7 @@ export class ArgsParser {
     return toObject(
       this.schemas.value.map((schema) => {
         const flag = args.findFlag(schema.getAlias())
-        const value = flag.getDefaultValue() || schema.getDefaultValue()
+        const value = flag.getValue() || schema.getDefaultValue()
 
         return { [schema.getAlias()]: value }
       })
