@@ -4,20 +4,35 @@ const Shoutouts = {
   Whizz: 'Whizz',
 }
 
-export function fizzbuzz({ number }) {
-  if (number.toString().includes('3')) {
-    return Shoutouts.Fizz
+class SpecialNumbers {
+  constructor(first, second, third) {
+    this.first = first
+    this.second = second
+    this.third = third
+  }
+}
+
+export class Game {
+  constructor(first, second, third) {
+    this.specialNumbers = new SpecialNumbers(first, second, third)
   }
 
-  let result = ''
-  if (number % 3 === 0) {
-    result += Shoutouts.Fizz
+  say({ number }) {
+    if (number.toString().includes(this.specialNumbers.first)) {
+      return Shoutouts.Fizz
+    }
+
+    let result = ''
+    if (number % this.specialNumbers.first === 0) {
+      result += Shoutouts.Fizz
+    }
+    if (number % this.specialNumbers.second === 0) {
+      result += Shoutouts.Buzz
+    }
+    if (number % this.specialNumbers.third === 0) {
+      result += Shoutouts.Whizz
+    }
+
+    return result || number.toString()
   }
-  if (number % 5 === 0) {
-    result += Shoutouts.Buzz
-  }
-  if (number % 7 === 0) {
-    result += Shoutouts.Whizz
-  }
-  return result || number.toString()
 }

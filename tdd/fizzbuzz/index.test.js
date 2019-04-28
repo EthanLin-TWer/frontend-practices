@@ -1,7 +1,8 @@
 // 20:21:03 20:22:16 1min 13s
-// 00:08:49 00:12:03 3min 14s
+// first part: 00:08:49 00:12:03 3min 14s
+// second part: 00:23:31 11min 28s
 
-import { fizzbuzz } from './index'
+import { Game } from './index'
 
 test.each([
   [1, '1'],
@@ -17,5 +18,5 @@ test.each([
   [70, 'BuzzWhizz'],
   [35, 'Fizz'],
 ])('fizzbuzz(%s) should return %s', (input, expected) => {
-  expect(fizzbuzz({ number: input })).toEqual(expected)
+  expect(new Game(3, 5, 7).say({ number: input })).toEqual(expected)
 })
