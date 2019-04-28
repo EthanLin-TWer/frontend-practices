@@ -1,58 +1,23 @@
-class Rule {
-  constructor(number) {
-    this.number = number
-  }
-
-  static firstMatched(conditions) {
-    return (number) => {
-      const found = conditions.find((condition) => condition(number) !== '')
-      if (found) {
-        return found(number)
-      }
-
-      return conditions.findLast(() => true)(number)
-    }
-  }
-
-  static and(conditions) {
-    return (number) => {
-      return conditions.reduce(
-        (result, condition) => result.concat(condition(number)),
-        ''
-      )
-    }
-  }
-
-  value(condition) {
-    return condition(this.number)
-  }
+const Shoutouts = {
+  Fizz: 'Fizz',
+  Buzz: 'Buzz',
+  Whizz: 'Whizz',
 }
 
-function returns(result) {
-  return {
-    whenMatching(number) {
-      return (target) => (target % number === 0 ? result : '')
-    },
-    whenIncludes(number) {
-      return (target) => (target.toString().includes(number) ? result : '')
-    },
-    whenNoMatching() {
-      return () => result.toString()
-    },
+export function fizzbuzz({ number }) {
+  if (number.toString().includes('3')) {
+    return Shoutouts.Fizz
   }
-}
 
-export function fizzbuzz(number) {
-  return new Rule(number).value(
-    Rule.firstMatched([
-      returns('Fizz').whenIncludes(3),
-      returns('Buzz').whenIncludes(5),
-      Rule.and([
-        returns('Fizz').whenMatching(3),
-        returns('Buzz').whenMatching(5),
-        returns('Whizz').whenMatching(7),
-      ]),
-      returns(number).whenNoMatching(),
-    ])
-  )
+  let result = ''
+  if (number % 3 === 0) {
+    result += Shoutouts.Fizz
+  }
+  if (number % 5 === 0) {
+    result += Shoutouts.Buzz
+  }
+  if (number % 7 === 0) {
+    result += Shoutouts.Whizz
+  }
+  return result || number.toString()
 }
