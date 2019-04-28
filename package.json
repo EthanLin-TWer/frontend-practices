@@ -2,7 +2,7 @@
   "scripts": {
     "lint": "eslint collections refactor tdd",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:ci": "jest --coverage"
   },
   "dependencies": {
     "lodash": "^4.17.11",
