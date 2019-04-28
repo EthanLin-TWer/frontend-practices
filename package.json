@@ -2,8 +2,7 @@
   "scripts": {
     "lint": "eslint collections refactor tdd",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "rebase": "./scripts/rebase-answer-branches-onto-master.sh"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "lodash": "^4.17.11",
