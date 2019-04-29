@@ -3,16 +3,6 @@
 // 09:31:46 09:33:30 1min 44s -> keyboard floating, in detail operations
 // 09:34:24 09:36:02 1min 38s -> += operations, over navigation
 
-import { fizzbuzz } from './index'
-
-test.each([
-  [1, '1'],
-  [2, '2'],
-  [3, 'Fizz'],
-  [6, 'Fizz'],
-  [5, 'Buzz'],
-  [10, 'Buzz'],
-  [15, 'FizzBuzz'],
-])('fizzbuzz(%s) should return %s', (input, expected) => {
-  expect(fizzbuzz(input)).toEqual(expected)
+test('should tests run', () => {
+  expect(1).toEqual(1)
 })
