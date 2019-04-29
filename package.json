@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/plugin-proposal-private-methods": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.16.0",
@@ -45,7 +47,9 @@
       "@babel/preset-env"
     ],
     "plugins": [
-      "@babel/plugin-proposal-optional-chaining"
+      "@babel/plugin-proposal-optional-chaining",
+      "@babel/plugin-proposal-private-methods",
+      "@babel/plugin-proposal-class-properties"
     ]
   },
   "husky": {
