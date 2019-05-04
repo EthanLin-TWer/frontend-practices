@@ -13,17 +13,8 @@
 // 10:44:07 10:45:32 1min 25s -> wasted navigations
 // 10:46:10 10:47:33 1min 23s -> wasted times(1/7 wasted)
 // 10:48:13 10:49:41 1min 28s -> generally slowly
+// 10:54:46 10:57:48 3min 2s
 
-import { fizzbuzz } from './index'
-
-test.each([
-  [1, '1'],
-  [2, '2'],
-  [3, 'Fizz'],
-  [6, 'Fizz'],
-  [5, 'Buzz'],
-  [10, 'Buzz'],
-  [15, 'FizzBuzz'],
-])('fizzbuzz(%s) should return %s', (input, expected) => {
-  expect(fizzbuzz(input)).toEqual(expected)
+test('should fizzbuzz rock', () => {
+  expect(1).toEqual(1)
 })
