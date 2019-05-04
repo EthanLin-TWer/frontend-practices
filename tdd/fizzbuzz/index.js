@@ -6,6 +6,5 @@ export function fizzbuzz(number) {
   if (number % 5 === 0) {
     result += 'Buzz'
   }
-
   return result || number.toString()
 }
