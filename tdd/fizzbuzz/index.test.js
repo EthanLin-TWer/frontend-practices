@@ -16,24 +16,22 @@
 // 10:54:46 10:57:48 3min 2s
 // 09:20:11 09:21:27 1min 16s Sunday, May 5, 2019 -> Filco is good!
 // 09:23:49 09:28:03 4min 14s -> extracting constants
+// 09:04:25 09:05:43 1min 18s Monday, May 6, 2019 -> Filco is good!
+// 09:06:13 09:07:35 09:13:04 1min 22s / 5min 29s / 6min 51s
 
 import { fizzbuzz } from './index'
 
 test.each([
   [1, '1'],
-  [2, '2'],
   [3, 'Fizz'],
-  [6, 'Fizz'],
   [5, 'Buzz'],
-  [10, 'Buzz'],
   [60, 'FizzBuzz'],
-  [7, 'Whizz'],
-  [14, 'Whizz'],
-  [21, 'FizzWhizz'],
-  [70, 'BuzzWhizz'],
   [13, 'Fizz'],
-  [35, 'Fizz'],
-  [59, 'Buzz'],
+  [53, 'Fizz'],
+  [54, 'Buzz'],
+  [7, 'Whizz'],
+  [47, 'Whizz'],
+  [21, 'FizzWhizz'],
 ])('fizzbuzz(%s) should return %s', (input, expected) => {
   expect(fizzbuzz(input)).toEqual(expected)
 })
