@@ -16,10 +16,14 @@ const Words = {
   Whizz: 'Whizz',
 }
 
+const contains3 = (number) => contains(3)(number)
+const contains5 = (number) => contains(5)(number)
+const contains7 = (number) => contains(7)(number)
+
 export function fizzbuzz(number) {
-  if (contains(3)(number)) return Words.Fizz
-  if (contains(5)(number)) return Words.Buzz
-  if (contains(7)(number)) return Words.Whizz
+  if (contains3(number)) return Words.Fizz
+  if (contains5(number)) return Words.Buzz
+  if (contains7(number)) return Words.Whizz
 
   const result = [
     sayWordIfDivisible(3, Words.Fizz),
