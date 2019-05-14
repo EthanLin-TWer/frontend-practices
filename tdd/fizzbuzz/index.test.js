@@ -20,6 +20,8 @@
 // 09:06:13 09:07:35 09:13:04 1min 22s / 5min 29s / 6min 51s
 // 20:37:49 20:39:00 1min 11s Monday, May 13, 2019 -> Filco is good!
 // 20:43:10 20:44:27 20:47:22 1min 17s / 2min 55s
+// 12:17:06 12:18:26 12:23:19 1min 20s / 4min 47s
+// 12:23:41 12:28:11 4min 30s
 
 import { fizzbuzz } from './index'
 
@@ -30,13 +32,11 @@ test.each([
   [6, 'Fizz'],
   [5, 'Buzz'],
   [10, 'Buzz'],
+  [60, 'FizzBuzz'],
   [7, 'Whizz'],
-  [15, 'Buzz'],
-  [32, 'Fizz'],
   [21, 'FizzWhizz'],
-  [35, 'Fizz'],
-  [70, 'BuzzWhizz'],
-  [210, 'FizzBuzzWhizz'],
+  [13, 'Fizz'],
+  [51, 'Buzz'],
 ])('fizzbuzz(%s) should return %s', (input, expected) => {
   expect(fizzbuzz(input)).toEqual(expected)
 })
