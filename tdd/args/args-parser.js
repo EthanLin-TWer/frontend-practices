@@ -1,4 +1,5 @@
 import { Arg } from './arg'
+import { Args } from './args'
 
 export class ArgsParser {
   #aSchema
@@ -8,6 +9,7 @@ export class ArgsParser {
 
   parse(command) {
     const [, value] = command.split(' ')
-    return new Arg('p', Number(value) || this.#aSchema.value)
+    const arg = new Arg('p', Number(value) || this.#aSchema.value)
+    return new Args(arg)
   }
 }
