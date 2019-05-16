@@ -1,3 +1,10 @@
 export class Schemas {
-  constructor() {}
+  constructor(aKey, aValue) {
+    this.aKey = aKey
+    this.aValue = aValue
+  }
+
+  get value() {
+    return this.aValue
+  }
 }

@@ -10,11 +10,11 @@ it('should be able to parse a flag with value', () => {
   expect(args.getValue('p')).toEqual(9000)
 })
 
-it.skip('should be able to parse a flag and use default value from schema when value is not specified', () => {
+it('should be able to parse a flag and use default value from schema when value is not specified', () => {
   const schema = new Schemas('p', 8080)
   const command = '-p'
 
   const args = new ArgsParser(schema).parse(command)
 
-  expect(args.getValue('p')).toEqual(9000)
+  expect(args.getValue('p')).toEqual(8080)
 })

@@ -1,10 +1,13 @@
 import { Args } from './args'
 
 export class ArgsParser {
-  constructor() {}
+  #aSchema
+  constructor(aSchema) {
+    this.#aSchema = aSchema
+  }
 
   parse(command) {
     const [, value] = command.split(' ')
-    return new Args('p', Number(value))
+    return new Args('p', Number(value) || this.#aSchema.value)
   }
 }
