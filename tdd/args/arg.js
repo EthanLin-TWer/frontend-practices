@@ -1,4 +1,4 @@
-export class Args {
+export class Arg {
   #name
   #value
   constructor(name, value) {
