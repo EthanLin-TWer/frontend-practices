@@ -6,6 +6,10 @@ export class Arg {
     this.#value = value
   }
 
+  getName() {
+    return this.#name
+  }
+
   getValue() {
     return this.#value
   }
