@@ -7,6 +7,10 @@ export class Schema {
     this.#value = value
   }
 
+  get name() {
+    return this.#flagName
+  }
+
   get value() {
     return this.#value
   }

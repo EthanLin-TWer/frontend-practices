@@ -16,5 +16,5 @@
 - should be able to parse commands (command string -> ?)
   - [x] should parse a flag with value
   - [x] should parse a flag with default value
-  - should parse multiple flags
+  - [x] should parse multiple flags
   - should throw error when a flag cannot be recognized

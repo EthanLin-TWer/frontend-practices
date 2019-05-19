@@ -2,17 +2,20 @@ import compact from 'lodash/compact'
 
 import { Arg } from './arg'
 import { Args } from './args'
+import { Schemas } from './schemas'
 
 export class ArgsParser {
-  #aSchema
-  constructor(aSchema) {
-    this.#aSchema = aSchema
+  #schemas
+  constructor(schemas) {
+    this.#schemas = new Schemas(schemas)
   }
 
   parse(command) {
     const args = compact(command.split('-')).map((arg) => {
       const [name, value] = arg.split(' ')
-      return new Arg(name, Number(value) || this.#aSchema.value)
+      const schema = this.#schemas.findSchema(name)
+
+      return new Arg(name, Number(value) || schema.value)
     })
 
     return new Args(args)
