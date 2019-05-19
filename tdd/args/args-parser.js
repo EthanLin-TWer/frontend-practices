@@ -1,3 +1,5 @@
+import compact from 'lodash/compact'
+
 import { Arg } from './arg'
 import { Args } from './args'
 
@@ -8,8 +10,11 @@ export class ArgsParser {
   }
 
   parse(command) {
-    const [, value] = command.split(' ')
-    const arg = new Arg('p', Number(value) || this.#aSchema.value)
-    return new Args(arg)
+    const args = compact(command.split('-')).map((arg) => {
+      const [name, value] = arg.split(' ')
+      return new Arg(name, Number(value) || this.#aSchema.value)
+    })
+
+    return new Args(args)
   }
 }
