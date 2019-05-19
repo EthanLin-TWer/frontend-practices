@@ -19,7 +19,9 @@ export class ArgsParser {
         throw new Error('Not recognized flag: -a')
       }
 
-      return new Arg(name, Number(value) || schema.value)
+      const parsedValue =
+        schema.type === 'number' ? Number(value) : String(value)
+      return new Arg(name, parsedValue || schema.value)
     })
 
     return new Args(args)
