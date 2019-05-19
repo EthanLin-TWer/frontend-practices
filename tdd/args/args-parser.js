@@ -16,7 +16,7 @@ export class ArgsParser {
       const schema = this.#schemas.findSchema(name)
 
       if (!schema) {
-        throw new Error('Not recognized flag: -a')
+        throw new Error(`Not recognized flag: -${name}`)
       }
 
       const parsedValue =
