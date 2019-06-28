@@ -1,24 +1,20 @@
 # FizBuzzWhizz
 
-## 需求
+## About this Kata
 
-你是一名体育老师，在某次课距离下课还有五分钟时，你决定搞一个游戏。此时有 100 名学生在上课。游戏的规则是:
+This Kata was posted here by someone anonymously. Michael Feathers and EmilyBache performed it at agile2008 when competing in “Programming with the stars” in python, in 4 minutes.
 
-1. 你首先说出三个不同的特殊数，要求必须是个位数，比如 3、5、7
-2. 让所有学生拍成一队，然后按顺序报数
-3. 学生报数时，如果所报数字是第一个特殊数(3)的倍数，那么不能说该数字，而要说 Fizz；如果所报数字是第二个特殊数(5)的倍数，那么要说 Buzz；如果所报数字是第三个特殊数(7)的倍数，那么要说 Whizz
-4. 学生报数时，如果所报数字同时是两个特殊数的倍数情况下，也要特殊处理，比如第一个特殊数和第二个特殊数的倍数，那么不能说该数字，而是要说 FizzBuzz, 以此类推。如果同时是三个特殊数的倍数，那么要说 FizzBuzzWhizz
-5. 学生报数时，如果所报数字包含了第一个特殊数，那么也不能说该数字，而是要说相应的单词，比如本例中第一个特殊数是 3，那么要报 13 的同学应该说 Fizz。如果数字中包含了第一个特殊数，那么忽略规则 3 和规则 4，比如要报 35 的同学只报 Fizz，不报 BuzzWhizz
+Difficulty: Easy Good for teaching: TDD , BabySteps
 
-现在，我们需要你完成一个程序来模拟这个游戏，它首先接受 3 个特殊数，然后输出 100 名学生应该报数的数或单词。比如，
+## Problem Description
 
-输入
+Imagine the scene. You are eleven years old, and in the five minutes before the end of the lesson, your Maths teacher decides he should make his class more “fun” by introducing a “game”. He explains that he is going to point at each pupil in turn and ask them to say the next number in sequence, starting from one. The “fun” part is that if the number is divisible by three, you instead say “Fizz” and if it is divisible by five you say “Buzz”. So now your maths teacher is pointing at all of your classmates in turn, and they happily shout “one!”, “two!”, “Fizz!”, “four!”, “Buzz!”… until he very deliberately points at you, fixing you with a steely gaze… time stands still, your mouth dries up, your palms become sweatier and sweatier until you finally manage to croak “Fizz!”. Doom is avoided, and the pointing finger moves on.
 
-```
-3,5,7
-```
+So of course in order to avoid embarassment infront of your whole class, you have to get the full list printed out so you know what to say. Your class has about 33 pupils and he might go round three times before the bell rings for breaktime. Next maths lesson is on Thursday. Get coding!
 
-输出(片段)
+Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz “.
+
+Sample output:
 
 ```
 1
@@ -27,20 +23,24 @@ Fizz
 4
 Buzz
 Fizz
-Whizz
+7
 8
 Fizz
 Buzz
 11
 Fizz
-Fizz
-Whizz
+13
+14
 FizzBuzz
 16
 17
 Fizz
 19
 Buzz
-...
-直到100
+... etc up to 100
 ```
+
+## Stage 2 - new requirements
+
+- A number is fizz if it is divisible by 3 or if it has a 3 in it
+- A number is buzz if it is divisible by 5 or if it has a 5 in it
