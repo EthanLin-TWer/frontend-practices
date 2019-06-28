@@ -47,3 +47,11 @@ it('should be able to parse a flag to string value when the type is specified in
 
   expect(args.getValue('d')).toEqual('/usr/local/bin')
 })
+
+it.skip('should be able to parse a flag to string value when the type is specified in the schema as a string', () => {
+  const schema = new Schema('d', '/usr/bin', 'string')
+  const command = '-d /usr/local/bin'
+
+  const args = new ArgsParser(schema).parse(command)
+  expect(args.getValue('d')).toEqual('/usr/local/bin')
+})
