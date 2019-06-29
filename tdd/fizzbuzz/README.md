@@ -44,3 +44,8 @@ Buzz
 
 - A number is fizz if it is divisible by 3 or if it has a 3 in it
 - A number is buzz if it is divisible by 5 or if it has a 5 in it
+
+## Results
+
+01:05:57 Sunday, June 30, 2019: 5min
+01:18:16 Sunday, June 30, 2019: 3min 47s
