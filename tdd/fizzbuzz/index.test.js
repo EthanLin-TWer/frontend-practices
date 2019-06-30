@@ -1,4 +1,5 @@
-// 10:48:33 10:51:58
+// 11:13:23 11:17:01
+
 import { fizzbuzz } from './index'
 
 it('should return 1 when number is not divisible by 3 or 5', () => {
@@ -25,6 +26,6 @@ it('should return Buzz when number is not divisible by 5 but has a 5 in it', () 
   expect(fizzbuzz(59)).toEqual('Buzz')
 })
 
-it('should return FizzBuzz when number is not divisible by 5 or 3 but have both 3 and 5 in it', () => {
+it('should return FizzBuzz when number is not divisible by 15 but has both 3 and 5 in it', () => {
   expect(fizzbuzz(53)).toEqual('FizzBuzz')
 })
