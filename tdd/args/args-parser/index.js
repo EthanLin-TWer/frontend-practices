@@ -1,4 +1,4 @@
-import { Args } from '../arg'
+import { Args } from '../args'
 
 export class ArgsParser {
   #schemas
