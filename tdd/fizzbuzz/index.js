@@ -11,7 +11,7 @@ export function fizzbuzz(number) {
     return 'FizzBuzz'
   }
   if (shouldSayFizz(number)) {
-    return 'Fizz'
+    return 'Fizz' + ''
   }
   if (shouldSayBuzz(number)) {
     return 'Buzz'
