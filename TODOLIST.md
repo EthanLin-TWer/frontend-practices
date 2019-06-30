@@ -5,21 +5,21 @@
 - tasking(:15min)
 - schema
   - parser should take a schema config, including:
-    * [ ] (5min:10min) [|] each schema has a type
-    - each schema has a default value associated with it
-    - multiple schemas
+    - [x] (5min:10min) [|] each schema has a type
+    - [ ] (3min:) [|] each schema has a default value associated with it
+    * [ ] (3min:) [|] multiple schemas
 - flags
   - parser should be able to receive an argument list that contains only one arg
-    - requirement: arg parser should be able to answer the value of a flag using flagname
-    - a flag should have only one character proceeding with a minus '-'
-    - a flag can have a boolean value separated with a space after the name
-    - a flag can have no value which should then use default value in the schema
-    - a flag can have a number value
-    - a flag can have no value which should then use default value in the schema
-    - a flag can have a string value
-    - a flag can have no value which should then use default value in the schema
-    - should throw error when flag name is not recognized in the schema list
-  - parser should be able to receive an argument list that contains multiple args
+    - [ ] (5min:) [|] a flag should have only one character proceeding with a minus '-'
+    - [ ] (5min:) [|] a flag can have a boolean value separated with a space after the name
+    - [ ] (5min:) [|] a flag can have no value which should then use default value in the schema
+    - [ ] (5min:) [|] a flag can have a number value
+    - [ ] (5min:) [|] a flag can have no value which should then use default value in the schema
+    - [ ] (3min:) [|] a flag can have a string value
+    - [ ] (5min:) [|] a flag can have no value which should then use default value in the schema
+    - [ ] (5min:) [|] should throw error when flag name is not recognized in the schema list
+  - - [ ] (10min:) [|] parser should be able to receive an argument list that contains multiple args
+  - requirement: arg parser should be able to answer the value of a flag using flagname
 
 ## requirements
 
