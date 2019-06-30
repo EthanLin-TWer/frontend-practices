@@ -1,5 +1,3 @@
-// 15:33:29 15:35:06
-
 import { fizzbuzz } from './index'
 
 test.each([
